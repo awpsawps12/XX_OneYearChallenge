@@ -353,6 +353,10 @@ Below is a repeat of *HtDF* process,
 
 The purpose should be more specific than signature. It descripe what the function does, NOT how the function does certain thing.
 
+/Signatures/ type should be as specific as possible.
+
+/Purpose/ should specify how to interpret the output when a function produce a boolean.
+
 *II. Examples (Unit tests)*
 
 - Wrong function definition
@@ -363,14 +367,59 @@ Above three (3) circumstances can lead test fails
 
 Examples/tests are writen after /stub/ is to check if the examples are well-formed.
 
+Code coverage, is a measure used to describe the degree to which the source code of a program is tested by a particular test suite. At a minimum, tests should have complete code coverage (No unexecuted code after all tests are run). 
+
+Think of boundary cases (corner cases) when design test cases. Thinking of a new case, or a new subtlety part way through the design is common. When it happens,
+
+- Write a test right aways
+- Update all affected part of design (Often involves purpose and/or function difinition)
+- Some time also invovles existing tests or signature
+
 *III. Inventory (Template & constants)*
 
 ** Varying Recipe Order
+
+#+BEGIN_QUOTE
+HtDF is NOT a waterfall process. It is a structured process, but it is not a locked-in waterfall process.
+#+END_QUOTE
+
 ** Poorly Formed Problems
+
+Content for this section is merged into "When Tests are Incorrect" section.
+
+#+BEGIN_QUOTE
+Design is the process of going from a poorly formed problem to a well structured solution.
+#+END_QUOTE
+
 ** Practice Problems
+** DONE Quiz
+   CLOSED: [2016-12-02 Fri 06:52]
+
+N/A
+
+** DONE Module Wrap Up
+   CLOSED: [2016-12-02 Fri 06:57]
+N/A
+* 2: How to Design Data
+** Module Overview
+** =cond= Expressions
+** Data Definitions
+** Atomic Non-Distinct
+** HtDF with Non-Primitive Data
+** HtDF X Structure of Data Orthogonality (正交性)
+** Interval
+** Enumeration
+** Itemization
+** HtDF with Interval
+** HtDF with Enumeration
+** HtDF with Itemization
+** Structure of Information Flows Through
+** Practice Problem
 ** Quiz
 ** Module Wrap Up
-* 2: How to Design Data
+
+N/A
+
 * 3a: How to Design Worlds
 * 3b: Compound Data
 * Appendix
