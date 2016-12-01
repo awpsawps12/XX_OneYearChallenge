@@ -10,7 +10,6 @@ require 'find'
 
 S3_REGION = 'ap-southeast-1'
 S3_BUCKET = 'cs-challenge'
-S3_URL    = 'https://cs-challenge.s3-ap-southeast-1.amazonaws.com/'
 
 Dotenv.load
 
