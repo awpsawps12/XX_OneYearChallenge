@@ -1,0 +1,1764 @@
+# -*- mode: Org; org-download-image-dir: "./imgs/"; -*-
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"/>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/languages/lisp.min.js"></script>
+#+HTML_HEAD: <script>hljs.initHighlightingOnLoad();</script>
+#+HTML_HEAD: <script src="../assets/js/hl_toc.js"></script>
+#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1">
+
+#+AUTHOR: Li Xinyang
+#+CREATOR: Li Xinyang
+#+TITLE: Introduction to Computer Science
+#+EMAIL: mail@li-xinyang.com
+
+The study note for this course may not as detail as the first one because I have watched this course many times when I first started learning how to do programming. However, I never /fully/ complete this course even once. The detailed course note can be found at http://cs50.tv.
+
+* DONE Week 00
+  CLOSED: [2016-11-17 Thu 14:58]
+** DONE Important Pre-Course Survey
+   CLOSED: [2016-11-16 Wed 22:18]
+N/A
+** DONE Lecture
+   CLOSED: [2016-11-17 Thu 14:58]
+
+Introduce how binary works (It is easier to understand when comparing it with decimal). Everything inside computer is represented using number.
+
+#+BEGIN_SRC bash
+   6   4  2 0 # Binary
+1000 100 10 0 # Decimal
+#+END_SRC
+
+Introduce *Algorithm* via phonebook example & binary search.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-12 at 8.23.49 PM.png @ 2016-11-12 20:24:04
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/ab3f6df6a313423427fbb776b6255cc93384fb9e.png]]
+
+Introduce course structure and psets.
+
+** DONE Lecture continued
+   CLOSED: [2016-11-17 Thu 14:58]
+
+The people counting algorithm,
+
+#+BEGIN_SRC 
+1 Stand up and assign yourself the number 1
+2 Pair off with someone standing,
+  add your number together,
+  and adopt the sum as your new number
+3 One of you should sit down,
+  the other should go back to step 2
+#+END_SRC
+
+See illustration below with 3 and 5 people example (traditional linear approach takes 2 to 4 operations to complete),
+
+#+BEGIN_SRC
+1 1 1
+2 1
+3 # Number of operations 2
+
+1 1 1 1 1
+2   2   1
+4       1
+5 # Number of operations 3
+#+END_SRC
+
+The beauty of algorithm only shows up when the inputs is huge.
+
+Introduce source code and very first line of C code,
+
+#+BEGIN_SRC c
+  #include <stdio.h>
+
+  int main(void)
+  {
+    printf("hello, world\n");
+  }
+#+END_SRC
+
+Introduce Scratch from MIT lib and simple usage of Scratch, simple control loop and function, etc.
+
+** DONE Walkthroughs
+   CLOSED: [2016-11-13 Sun 11:13]
+N/A
+** DONE Shorts
+   CLOSED: [2016-11-17 Thu 14:58]
+*** DONE Algorithms
+    CLOSED: [2016-11-17 Thu 14:58]
+
+Algorithm, a predefined steps/set of instructions (step-by-step) a computer follows to do. Putting input(s) and producing output(s). Each algorithm has its /pros/ and /cons/, choose the one that best fit the situation.
+
+*** DONE ASCII
+    CLOSED: [2016-11-17 Thu 14:58]
+
+Using binary to represent number and text (a-z, A-Z, 0-9, etc.). ANSI introduced ASCII.
+
+http://www.asciitable.com/
+
+0-9 is corresponding to the binary notation with prefix of =011=, which makes =0= become =0110000=.
+
+A-Z is corresponding to the binary notation character index with prefix of =10=, =A= becomes =1000001=. a-z is corresponding to the binary notation character index with prefix of =11=. Therefore a bit flip between =10= to =11= can turn an uppercase character into lowercase.
+
+Other special characters are not included inside ASCII but Unicode can cover all of them.
+
+*** DONE Binary
+    CLOSED: [2016-11-17 Thu 14:58]
+
+Decimal notation is counting number using a base 10 system. Binary is base 2.
+
+#+BEGIN_SRC
+# Decimal
+437
+400      + 30       + 7
+4 * 100  + 3 * 10   + 7 * 1
+4 * 10^2 + 3 * 10^1 + 7 * 10^0
+
+Coverting binary number into decimal number,
+
+# Binary
+101110011
+1 * 2^8 + 0 * 2^7 + 1 * 2^6 + 1 * 2^5 + 1 * 2^4 + 0 * 2^3 + 0* 2^2 + 1 * 2^1 + 1 * 2^0
+256     + 0       + 64      + 32      + 16      + 0       + 0      + 2       + 1
+371
+#+END_SRC
+
+Convert decimal number into binary number,
+
+#+BEGIN_SRC
+237 - 256 -> 0(Invalid)
+237 - 128 -> 1(109)
+109 - 64  -> 1(45)
+45  - 32  -> 1(13)
+13  - 16  -> 0(Invalid)
+13  - 8   -> 1(5)
+5   - 4   -> 1(1)
+1   - 2   -> 0(Invalid)
+1   - 1   -> 1(0)
+
+# Binary notation will be
+011101101
+#+END_SRC
+
+Binary addition,
+
+#+BEGIN_SRC
+  1101101
++ 1010110
+---------
+ 11000011
+#+END_SRC
+
+*** DONE Scratch
+    CLOSED: [2016-11-16 Wed 22:18]
+N/A
+*** DONE Threads
+    CLOSED: [2016-11-17 Thu 14:58]
+
+Generally programs can run one at a time. Operating system manages processes/programs and switch between them. 
+
+Thread, lighter-weight version of process, unit of processing, a set of instruction can "run" with other threads.
+
+Process and thread are related to a general topic, *concurrency*.
+
+** DONE Problem Set 0
+   CLOSED: [2016-11-13 Sun 12:20]
+
+N/A
+
+* DONE Week 01
+  CLOSED: [2016-11-17 Thu 14:59]
+** DONE Lecture
+   CLOSED: [2016-11-13 Sun 22:18]
+
+Introduce the first "bug" in computer found in MARK I. Start using C language.
+
+Source code, the written code gives computer instructions.
+
+Compiler, converts source code into object code (0s & 1s).
+
+Function, takes input(s) and produce output(s) or some cases side-effects.
+
+Cloud, computers elsewhere that store data and run software.
+
+Library can prevent reinvent the wheels.
+
+Compiler used for this course is called *Clang*, and the default output without argument is =a.out=. Command line program takes command line argument(s), so the behavior of the program is changeable.
+
+#+BEGIN_QUOTE
+Almost always in Linux environment, when nothing bad seems to happen, that means something good actually happened.
+#+END_QUOTE
+
+Compiler can check errors for programmer before the source code get compiled.
+
+Introduce the idea of *imprecision*, see code snippet below,
+
+#+BEGIN_SRC c
+  #include <stdio.h>
+  int main(void) {
+    printf("%.20f\n", 1.0 / 10.0) // -> 0.1000000000000000000000000008912734
+  }
+#+END_SRC
+
+** DONE Lecture continued
+   CLOSED: [2016-11-13 Sun 22:18]
+
+Imprecision is caused by computer can only store finite number on hard disk space, therefore, computer only store the best estimated value.
+
+Main function in C is the entrance of the program (Where the function start to run).
+
+Data type is used to store different kind of values.
+
+Integer overflow, a number is too large to represent within the available storage space.
+
+** DONE Walkthroughs
+   CLOSED: [2016-11-13 Sun 22:18]
+
+*** DONE Sizeof
+    CLOSED: [2016-11-17 Thu 14:59]
+
+=sizeof= is used to inspect the size of variable in C.
+
+** DONE Section
+   CLOSED: [2016-11-14 Mon 14:50]
+*** Command Line
+N/A
+*** Data Type
+    
+Integers always use 4 bytes of memory (32 bits). (1 byte = 8 bits) This means the range of value can store is limited to 32 bits. It is about positive and negative 2 billion.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-13 at 10.11.16 PM.png @ 2016-11-13 22:11:31
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/dd741a972ce2afc67cdfc0a7ecc83bc7d51a6310.png]]
+
+Unsigned integer double the positive side of numbers to =2^32 - 1=. Char is 1 byte, float is 4 bytes, double is 8 bytes, void is a type but not a data type.
+
+Like any number stored in computer, float also has precision problem.
+
+*** Operators
+
+This sections covers arithmetic operators, boolean expressions.
+
+*** Conditional Statements
+
+N/A
+
+*** Loop
+
+There are tree(3) kind of loop in C, =for=, =while= and =do-while= (Run at least once).
+
+** DONE Shorts
+   CLOSED: [2016-11-17 Thu 14:59]
+*** DONE Boolean
+    CLOSED: [2016-11-17 Thu 14:59]
+
+Boolean values and conditions are named after George Boole, a 19th century mathematician who pioneered Boolean Logic (Grouping and comparing boolean values).
+
+Boolean value can have two values, true or false. There are many boolean operators, like =AND= and =OR=.
+
+*** DONE Compilers
+    CLOSED: [2016-11-17 Thu 14:59]
+
+In simple term, compile is to transfer one programming language to another. (Usually is refer to transfer a higher level programming language to a lower level programming language)
+
+There are four (4) major steps for the overall C compilation,
+
+1. Preprocessing, done by preprocessor (Copy & paste files/declared variable)
+2. Compilation, done by the compiler (Convert C to assembly code, processor specific language)
+3. Assembling, done by the assembler (Translation assembly code into object code, 0 and 1)
+4. Linking, done by the linker (Combines object files into one big executable file)
+
+Read more about the differences between assembly code, object code and machine code at link below http://stackoverflow.com/a/466811. (Below is a visual representation)
+
+#+DOWNLOADED: http://www.tenouk.com/ModuleW_files/ccompilerlinker001.png @ 2016-11-14 15:41:41
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/a23ddc3ce477e64264d3396fde33eb8937ff68d4.png]]
+
+*** DONE Functions
+    CLOSED: [2016-11-17 Thu 14:59]
+
+#+BEGIN_QUOTE
+Functions are sections of code used within a large program to perform a particular task.
+#+END_QUOTE
+
+Functions are also known as procedures, subroutines and subprograms.
+
+Function can be used to structure the code like an essay. Function do/don't accept argument and return value/nil(side effects).
+
+*** DONE Libraries
+    CLOSED: [2016-11-17 Thu 14:59]
+
+#+BEGIN_QUOTE
+In programming, a library is related pre-written code.
+#+END_QUOTE
+
+Programmer use library to share common and helpful code. It is the most important tool a programmer have.
+
+#+BEGIN_QUOTE
+One of the essential skills of engineering is knowing the tools available in your toolbox so that you can use them and avoid reinventing the wheel unless you have to do so.
+#+END_QUOTE
+
+Header file (=*.h=) does NOT include the functions' implementation. It illustrate a important computer science principle *Information Hiding* (Encapsulation), which implies that the user does not need to know the implementation in order to use the function/library.
+
+Steps to use a C library,
+
+1. Include the header files when writing code =#include <stdio.h>= or =#include "mylib.h"=
+2. Link in the libraries when compiling the code =clang hello.c -l[lib]=
+
+*** DONE Loops
+    CLOSED: [2016-11-14 Mon 17:56]
+
+N/A
+
+*** DONE Make, Clang
+    CLOSED: [2016-11-17 Thu 14:59]
+
+Make is a utility for compiling source code. Similar tool is Rake.
+
+Clang is one of the C language compiler another option is /gcc/.
+
+*** DONE Precedence (优先)
+    CLOSED: [2016-11-14 Mon 19:16]
+
+N/A
+
+*** DONE Style
+    CLOSED: [2016-11-14 Mon 19:16]
+
+N/A
+
+*** DONE Typecasting
+    CLOSED: [2016-11-17 Thu 14:59]
+
+#+BEGIN_QUOTE
+Typecasting is a way to alter a computer's interpretation of some data by implicitly or explicitly changing its data type.
+#+END_QUOTE
+
+Precision can remain the same or lose precision but never gain precision. (The excess precision will get truncated)
+
+*** DONE Variables
+    CLOSED: [2016-11-17 Thu 14:59]
+
+N/A
+
+** DONE Problem Set 1
+   CLOSED: [2016-11-17 Thu 14:59]
+
+* TODO Week 02
+** DONE Lecture
+   CLOSED: [2016-11-14 Mon 22:25]
+
+https://reference.cs50.net/
+
+** DONE Lecture continued
+   CLOSED: [2016-11-17 Thu 14:59]
+
+Cryptography is the encryption and decryption of secret messages.
+
+Backslash zero maps to all zero bits which is call the null terminator.
+
+Array is a data structure (There many more others), string is an array of characters. Code snippet below declare an array in C,
+
+#+BEGIN_SRC c
+type name[size];
+#+END_SRC
+
+*Segmentation fault* happens when the code access the memory it should not touch/access.
+
+=argc= is the count for command line argument, =argv= is the value(s) passed into the program in array. (This is for C program, but other language programs are almost behave the same)
+
+=main= function below is a function supports command line arguments (With CS50 training wheels),
+
+#+BEGIN_SRC c
+int main(int argc, string argv[]) {}
+#+END_SRC
+
+Why do we need =argc= when we can count the number of arguments from =argv=, quoting the offical explanation from C99 rationale
+
+#+BEGIN_QUOTE
+The specification of =argc= and =argv= as arguments to =main= recognizes extensive prior practice. =argv[argc]= is required to be a null pointer to provide a /redundant check/ for the end of the list, also on the basis of common practice.
+#+END_QUOTE
+
+** DONE Walkthroughs
+   CLOSED: [2016-11-16 Wed 20:57]
+
+N/A
+
+** DONE Section
+   CLOSED: [2016-11-17 Thu 14:59]
+*** DONE Administrivia
+    CLOSED: [2016-11-16 Wed 21:09]
+N/A
+*** DONE Functions
+    CLOSED: [2016-11-17 Thu 15:00]
+
+It is not a good idea to put all code inside =main= function.
+
+#+BEGIN_QUOTE
+Function, a black box with a set of inputs and output.
+#+END_QUOTE
+
+Call it a black box because we are not writing/implementing the function.
+
+Why use a function?
+
+1. Organization, break up a complicated problem into manageable subparts
+2. Simplification, smaller components tend to be easier to design/implement/design
+3. Reusability, it can be recycled
+
+*** DONE Variables and Scope
+    CLOSED: [2016-11-17 Thu 15:00]
+
+Scope is a characteristic of a variable that defines from which functions that variable may be accessed. 
+
+Local variable can only be accessed within the functions in which they are created. Global variables can be accessed by any function in the program.
+
+Local variables in C are passed by value in function calls. Pass by values means that the callee receives a copy of the passed variable not the variable self, in other words the variable in the caller is unchanged unless overwritten.
+
+*** DONE Arrays
+    CLOSED: [2016-11-17 Thu 15:00]
+
+Arrays, a fundamental data structure and they are super useful. Arrays are used to hold values of the same type at contiguous memory location in C (And other languages).
+
+Arrays are passed by reference. The callee receives the actual array, *not* a copy of it.
+
+*** DONE Command Line Arguments
+    CLOSED: [2016-11-16 Wed 21:44]
+
+N/A
+
+*** DONE Magic Numbers
+    CLOSED: [2016-11-17 Thu 15:00]
+
+Magic numbers are directly writing constants into code, a number without any context.
+
+#+BEGIN_SRC c
+card deal_card(deck name)
+{
+  for (int i = 0; i < 52; i++) {
+    // deal the card
+  }
+}
+#+END_SRC
+
+=52= in code snippet above is a magic number. Code snippet below is a better practice,
+
+
+#+BEGIN_SRC c
+  #define DECKSIZE 52
+
+  card deal_cards(deck name) {
+    for (int i = 0; i < DECKSIZE; i++) {
+      // Deal the card
+    }
+  }
+#+END_SRC
+
+** TODO Shorts
+*** TODO RSA (Unfinished)
+
+Traditional encryption algorithms use symmetric key algorithms which use the same key to encrypt and decrypt message.
+
+RSA, an widely used encryption algorithms. It uses a pair of keys, one for encryption (Public Key) and one for decryption (Private Key), also known as an asymmetric key algorithm.
+
+Below is the steps to generate a pair of keys (Public and private keys),
+
+...
+
+
+*** DONE Vigenere Cipher
+    CLOSED: [2016-11-18 Fri 10:12]
+
+Caesar cipher shifting the alphabet by a certain number of letters.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-16 at 10.10.11 PM.png @ 2016-11-16 22:10:27
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/cbb96ef859b6c1f746896ed7785205732c15665a.png]]
+
+Vigen??re Cipher use a word as a key instead of a single number.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-16 at 10.12.29 PM.png @ 2016-11-16 22:12:37
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/5eeacc3e3010cfe374339602ba22075ab2de15a6.png]]
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-16 at 10.13.12 PM.png @ 2016-11-16 22:13:21
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/9d132df6369cc690dd81450a0e5a9006c38aadd7.png]]
+
+However, brute-force attach can easily decrypt the messages encrypted by Ceaser cipher or Vigen??re cipher.
+
+** DONE Problem Set 2
+   CLOSED: [2016-11-17 Thu 15:00]
+N/A
+* TODO Week 03
+** TODO Lecture
+
+This week focus on algorithms. Sorting make subsequent algorithms work more effectively. 
+
+Introducing bubble sort, selection sort and insertion sort.
+
+The worst-case performance of bubble sort is $O(n^2)$, the best is $\Omega(n)$.
+
+The worst-case performance of selection sort is $O(n^2)$, the best is $\Omega(n^2)$.
+
+The worst-case performance of insertion sort is $O(n^2)$, the best is $\Omega(n)$.
+
+When we determine the complexity of certain algorithm we only focus on the big value (The dominant factor).
+
+#+BEGIN_QUOTE
+Computer scientist is going to generally do is ignore all of those smaller order terms and just look at the one that contributes the most of the cost.
+#+END_QUOTE
+
+Briefly talks about merge sort which has $O(n\,log\,n)$ and $\Omega(n\,log\,n)$. 
+
+*A Introduction of Logarithms*
+
+#+BEGIN_QUOTE
+A Logarithm is the power to which a number must be raised in order to get some other number.
+#+END_QUOTE
+
+For example, below is a base ten logarithm.
+
+$$
+log\,100 = 2
+$$
+
+$$
+log_{10}100 = 2
+$$
+
+$$
+10^2 = 100
+$$
+
+There are logarithms with different base units by write log followed by the base number as a subscript ($log_{2}8 = 3$, computer scientists always think and talk in term of log base 2 of n, therefore, the default base for $log$ is $2$).
+
+** TODO Lecture continued
+
+Introduce the idea of recursion. 
+
+#+BEGIN_QUOTE
+Recursion occurs when a thing is defined in terms of itself or of its type.
+#+END_QUOTE
+
+#+DOWNLOADED: .////home/li-xinyang/Desktop/220px-Droste.jpg @ 2016-11-21 15:30:52
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/9c52de25620ce18f1ff7b94759ec33cff352f78d.jpg]]
+
+Code snippet below is the pseudocode for merge sort,
+
+#+BEGIN_SRC 
+On input of e elements
+  if n < 2
+     return
+  else
+    sort left half of elements
+    sort right half of elements
+    merge sorted halves
+#+END_SRC 
+
+*How to compute the running time of merge sort?*
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-21 at 9.03.29 PM.png @ 2016-11-21 21:04:15
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/7e05e9d194b6a85564db0e1953b1499f370e45c8.png]]
+
+$log\,n$ is the "hight" of the diagram (The process), $n$ is the width of the diagram (The process). Asymptotically whould be the big word to describe the upper bound on a running time $O(n\,log\,n)$.
+
+The running time for =if n < 2= (Constant time),
+
+$$
+T(n) = O(1)
+$$
+
+The running time for =else= case (~n >= 2~),
+
+$$
+T(n) = T(n/2) + T(n/2) + O(n)
+$$
+
+Introduce the idea of bitwise opertors. Bitwise operators which operate on bits individually. =&=, =|=, =<<= (Left shift operator), =>>= (Right shift operator), =^= (Exclusive OR or XOR) and =~= (Unary operator, flip the bit).
+
+Code sample below is not complete.
+
+#+BEGIN_SRC c
+0 & 0    // -> 0
+0 & 1    // -> 0
+1 & 1    // -> 1
+
+0 | 0    // -> 0
+0 | 1    // -> 1
+
+0 ^ 0    // -> 0
+0 ^ 1    // -> 1
+1 ^ 1    // -> 0
+
+~0       // -> 1
+~1       // -> 0
+
+  1 << 7 // -> 10000000
+101 >> 2 // -> 1
+#+END_SRC
+
+** TODO Section
+*** TODO GDB
+
+GDB (GNU Debugger) a command line tool for debugging.
+
+#+BEGIN_SRC
+# Start GDB
+gdb <program name>
+
+# Create breakpoint
+b [function name, line number]
+
+# Run
+r [command-line arguments]
+
+# Other commands in GDB
+
+# Step forward one block of code
+n
+
+# Step formward one line for code
+s
+
+# Print out variable
+p [variable]
+
+# Print out local variables
+info locals
+
+# Shows series of functions call (Backtrace)
+bt
+
+# Quits
+q
+#+END_SRC
+
+*** TODO Computational Complexity
+
+It is important skill set to analyze the complexity (Resources a algorithms require) of algorithms which indicates how well an algorithm scales in a large data set (Whatever makes the most sense in the algorithm context).
+
+Algorithm complexity generally referes to *worst-case scenario* ($O$) but sometime we also care the best-case scenario (%\Oega$).
+
+We ONLY care the tendency of an algorithm (NOT precisely) which is dictated by an algorithm's *highest-order term*. 
+
+For example we ONLY care $f(n) = n^3$ in the algorithms below,
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-25 at 7.52.22 PM.png @ 2016-11-25 19:52:36
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/cb4566aedc738efe00bec3db611682619e506b0d.png]]
+
+The snippet below show the common computational complexity (8 in total)from the fastest to the sloest,
+
+- $O(1)$, constant time (Hash table)
+- $O(log n)$, logarithmic time (Binary search)
+- $O(n)$, linear time (Simple =for= loop)
+- $O(n log n)$, linearithmic time (Merge sort)
+- $O(n^2)$, quadratic time (2-leve nested loop)
+- $O(n^c)$, polynomial time
+- $O(c^n)$, exponential time
+- $O(n!)$, factorial time
+- $O(\infty)$, infinity time
+
+*** TODO Selection Sort
+
+Selection sort is to find the smallest unsorted element and add it to the end of sorted list, with computation complexity of $O(n^2)$, $\Omega(n^2)$.
+
+#+BEGIN_SRC 
+Repeat until no unsorted elements remain:
+  - Search the unsorted part of the data to find the smallest
+  - Swap the smallest value with the first element of the unsorted part
+#+END_SRC
+
+#+BEGIN_SRC c
+  void swap(int* xp, int* yp) {
+    int temp = *xp;
+    ,*xp = *yp;
+    ,*yp = temp;
+  }
+
+  // n, length of array
+  void selectionSort(int arr[], int n) {
+    int i, j, min_index;
+    // Move boundary of unsorted subarray
+    for (i = 0; i < n - 1; i++) {
+      min_index = i;
+
+      // Find minimum element in unsorted array
+      for (j = i + 1; j < n; j++) {
+        if (arr[min_index] > arr[j]) { min_index = j; }
+      }
+
+      // Swap the found minimum element with the first unsorted element
+      swap(&arr[min_index], &arr[i]);
+    }
+  }
+#+END_SRC
+
+*** TODO Bubble Sort
+
+Bubble sort is to move higher valued element towards the right and lower value elements towards the left, with computation complexity of $O(n^2)$ and $\Omega(n)$.
+
+#+BEGIN_SRC 
+Set swap counter to a non-zero value
+Repeat until the swap counter is zero
+  - Reset swap counter to 0
+  - Look at each adjacent pair
+    - Swap if elements are not in order, add one to swap counter
+#+END_SRC
+
+#+BEGIN_SRC c
+  void bubbleSort(int arr[], n) {
+    int i, j, counter;
+    for (i = 0; i < n; i++) {
+      counter = 0;
+      for (j = 0; j < n; j++) {
+        if (j == 0) continue;
+        if (arr[j] > arr[j - 1]) {
+          swap(&arr[j], &arr[j - 1]); 
+          counter++;
+        }
+      }
+      if (counter == 0) break;
+  }
+#+END_SRC
+
+*** TODO Insertion Sort
+
+Insertion sort is to build sorted array in place by shifting elements out of the way, with computation complext of $O(n^2)$ and $\Omega(n)$.
+
+#+BEGIN_SRC 
+Call the first element of the array "sorted"
+Repeat until all elements are sorted
+  - Look at the next unsorted element insert into the "sorted" portion by shifting the requsite number of elements
+#+END_SRC
+
+#+BEGIN_SRC c
+  void inserctionSort(int arr[], n) {
+    for (int i = 2; i < n; i++) {
+      insert(arr, arr[i - 1], i);
+    }
+  }
+
+  // Insert the last element to the right position
+  void insert(int arr[], int value, int n) {
+    for (int i = n - 2; i >= 0; i--) {
+      if (arr[i] > arr[i + 1]) {
+        swap(&arr[i], &arr[i + 1]);
+      } else {
+        return;
+      }
+    }
+  }
+#+END_SRC
+
+*** TODO Merge Sort
+
+Merge sort is to sort smaller arrays and then combine those arrays together in sorted order, with computation complext of $O(n log n)$ and $\Omega(n log n)$. Merge sort leverages recursion.
+
+#+BEGIN_SRC 
+Sort the left half of the array (assuming n > 1)
+Sort the right half of the array (assuming n > 1)
+Merge the two halves together
+#+END_SRC
+
+#+BEGIN_SRC python 
+  def merge_sort(arr):
+      if len(arr) == 1:
+          return arr
+      else:
+          mid = len(arr) / 2
+          l = merge_sort(arr[:mid])
+          r = merge_sort(arr[mid:])
+      sorted = []
+      i = j = 0
+      while i < len(l) and j < len(r):
+          if l[i] < r[j]:
+              sorted.append(l[i])
+              i += 1
+          else:
+              sorted.append(r[j])
+              j += 1
+      sorted += l[i:]
+      sorted += r[j:]
+      return sorted
+
+  return merge_sort([4, 3, 2, 1])
+#+END_SRC
+
+#+RESULTS:
+| 1 | 2 | 3 | 4 |
+
+#+header: :main no :exports both
+#+BEGIN_SRC C
+  #include <stdio.h>
+  #include <stdlib.h>
+
+  void merge(int* ap, int* lp, int lCount, int* rp, int rCount);
+  void mergeSort(int* ap, int n);
+
+  int main() {
+	  int a[] = {4, 3, 2, 1};
+    int n = sizeof(a)/sizeof(int);
+    mergeSort(a, n);
+
+    for (int i = 0; i < n; i++) {
+      printf("%d ", a[i]);
+    }
+    printf("\n");
+
+    return 0;
+  }
+
+  void merge(int* ap, int* lp, int lCount, int* rp, int rCount) {
+    int i, j, k;
+    i = 0; j = 0; k = 0;
+
+    while (i < lCount && j < rCount) {
+      if (lp[i] < rp[j]) ap[k++] = lp[i++];
+      else ap[k++] = rp[j++];
+    }
+    while(i < lCount) ap[k++] = lp[i++];
+    while(j < rCount) ap[k++] = rp[j++];
+  }
+
+  void mergeSort(int* ap, int n) {
+    int mid, i, *lp, *rp;
+    if (n < 2) return;
+
+    mid = n / 2;
+
+    lp = (int*)malloc(mid * sizeof(int));
+    rp = (int*)malloc((n - mid) * sizeof(int));
+
+    for (i = 0; i < mid; i++) lp[i] = ap[i];
+    for (i = mid; i < n; i++) rp[i - mid] = ap[i];
+
+    mergeSort(lp, mid);
+    mergeSort(rp, n - mid);
+    merge(ap, lp, mid, rp, n - mid);
+    free(lp);
+    free(rp);
+  }
+#+END_SRC
+
+#+RESULTS:
+: 1 2 3 4
+
+*** TODO Linear Search
+
+Linear search is to iterate across the array from the first to the last, searching for a specified element, with computational complexity of $O(n)$ and $\Omega(1)$.
+
+#+BEGIN_SRC 
+Repeat start at the first element
+  - If the first element is what you are looking for, stop
+  - Otherwise move to the next element
+#+END_SRC
+
+#+header: :exports both
+#+BEGIN_SRC python
+  def linear_search(arr, target):
+      for num in arr:
+          if target == num:
+              return True
+      return False
+
+  return linear_search([3, 2, 1], 1)
+#+END_SRC
+
+#+RESULTS:
+: True
+
+*** TODO Binary Search
+
+Binary search is to divide and conquer by reducing the search area by half each time, trying to find a target number (The array MUST be sorted) with computational complexity of $O(log n)$ and $\Omega(n)$.
+
+#+BEGIN_SRC 
+Repeat until the (sub)array is of size 0:
+  - Calcuate the middle point of current (sub)array
+  - If the target is at the middle, stop
+  - Otherwise, if the target is less than what's at the middle, repeat, changing the end point to be just the left to middle
+  - Otherwise, if the target is greater than what's at the middle, repeat, changing the start point to be just the right to middle
+#+END_SRC
+
+#+BEGIN_SRC python
+  def binary_search(arr, target):
+      if len(arr) == 0:
+          return False
+      else:
+          mid = len(arr) / 2
+          if arr[mid] == target:
+              return True
+          else:
+              if target > arr[mid]:
+                  binary_search(arr[:mid], target)
+              else:
+                  binary_search(arr[mid:], target)
+
+  return binary_search([3, 2, 1], 1)
+#+END_SRC
+
+#+RESULTS:
+: None
+
+*** DONE Algorithms Summary
+    CLOSED: [2016-11-25 Fri 23:59]
+
+N/A
+
+** TODO Shorts
+*** TODO Asymptotic Notation
+
+https://learnxinyminutes.com/docs/asymptotic-notation/
+
+#+BEGIN_QUOTE
+Asymptotic Notations are languages that allow us to analyze an algorithm’s running time by identifying its behavior as the input size for the algorithm increases. This is also known as an algorithm's growth rate.
+#+END_QUOTE
+
+Asymptotic complexity means how the runtime changes as the size of input grows.
+
+$\theta$ is used to describe algorithms where the best and worst cases are the same. For example /merge sort/ has a computation complexity of $\theta(n log n)$.
+
+*Big-O*, provides us with an asymptotic upper bound for the growth rate of runtime of an algorithm.
+
+$f(x)$ is algorithm runtime, $g(x)$ is an arbitrary time complexity relate to algorithm.
+
+Complexities cheatsheet can be found at http://bigocheatsheet.com/.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-26 at 12.30.27 AM.png @ 2016-11-26 00:30:51
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/96fde01b64f8b1cc5866069decc805f43cd9210b.png]]
+
+*** TODO Quick Sort
+
+The key concepts in quick sort is *pivot*, *wall* and *current element* which computation complexity of $O(n^2)$ and averate performace of $O(n\,log\,n)$.
+
+#+DOWNLOADED: .//Users/li-xinyang/Downloads/Sorting_quicksort_anim.gif @ 2016-11-26 13:48:11
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/9db93c549d15f70967dd1760ef8d17776f015d9c.gif]]
+
+** DONE Problem Set 3
+   CLOSED: [2016-11-22 Tue 15:57]
+
+#+BEGIN_QUOTE
+Remember take "baby steps". Don't try to bite off the entire game at once.
+#+END_QUOTE
+
+* TODO Week 04
+** TODO Lecture
+
+Talks about /recursion/ again.
+
+#+BEGIN_QUOTE
+A algorithm is recursive if it uses or calls itself.
+#+END_QUOTE
+
+A metaphor of swaping values in C by using orange juice and milk.
+
+#+BEGIN_SRC c
+  void swap(int a, int b)
+  {
+    int tmp = a;
+    a = b;
+    b = c;
+  }
+#+END_SRC
+
+But turns out the code above does NOT work because argument(s) is passing by value in C.
+
+#+BEGIN_SRC c
+  void swap(int a, int b) {
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+  }
+#+END_SRC
+
+Code above swap the value between two variables (Oil and water swaping experiment). However, this kind of micro-optimisation is not "that" compelling because a computer is using tens of megabytes or more memory these days. Moreover, the code snippet above still does NOT work because the same reason (Argument is passing by value in C).
+
+#+BEGIN_QUOTE
+Stack is a chunk of memory that functions have access to when they are called.
+#+END_QUOTE
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-22 at 9.57.15 PM.png @ 2016-11-22 21:57:29
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/a136da7d3ae831a31b954e3ce2b857687aff9f25.png]]
+
+Introduce the idea of *Pointer* and turns out =string= in CS50 library is actually =char*=. 
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-22 at 10.03.00 PM.png @ 2016-11-22 22:03:22
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/7c80929a4db14a2c0fcbfd7573f7de63ec02da21.png]]
+
+** TODO Lecture continued
+
+The first three(3) bytes in a JPEG image is =255=, =216= and =255= (Total 24 bits).
+
+Hexadecimal is base 16.
+
+#+BEGIN_SRC 
+      255 - Decimal
+1111 1111 - Binary
+   f    f - Hexadecimal
+     0xff
+#+END_SRC
+
+Image below is the signature for bitmap image,
+
+#+DOWNLOADED: .////home/li-xinyang/Desktop/download.png @ 2016-11-23 11:07:08
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/51eeec4798ef615e56cf5efd5b5dc86ce0c0d604.png]]
+
+Introduce the idea of *Struct* which is used to build custom data type.
+
+#+BEGIN_SRC c
+  typedef struct
+  {
+    string name;
+    string dorm;
+  }
+  student;
+
+  student me;
+
+  // Code below is for demonstration purpose
+  me.name = "Xinyang";
+  me.dorm = "08-59";
+#+END_SRC
+
+=strcmp= compares two string letter by letter (Until hit =\0=) for equality in C. =strlen= checks the length of string in C.
+
+=malloc= is used for memory allocation. Code snippet below allocates the memory for a string of length 6 (Extar one char for =\0=),
+
+#+BEGIN_SRC c
+  char* t = malloc((6 + 1) * sizeof(char));
+#+END_SRC
+
+=*= can also be used as /dereference operator/ (Different meaning under different contexts), which is a fancy way of saying go to the following address,
+
+#+BEGIN_SRC c
+  *pointer = 3;       // Set value stored at pointer to be 3
+  *(pointer + 1) = 4; // Pointer arithmetic, setting vlaue stored at (pointer + 1) to be 4
+#+END_SRC
+
+The truth is when access value inside an array in C using =[]=. It is just a syntax suger, which later convert into pointer arithmetic.
+
+#+BEGIN_SRC c
+  void swap(int* a, int* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+  }
+#+END_SRC
+
+=&= can be used to get the address of a variable, for example =&foo=. It is the opposite of =*foo= which figure out the address of =foo=.
+
+The tree(3) pointer rules,
+
+1. Pointer and pointee are separate (Dont forget to set up the pointee using =malloc=)
+2. Dereference a pointer (Using =*=) to access its pointee
+3. Assignment (~=~) between pointers makes them point to the same pointee also known as sharing
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Artboard.png @ 2016-11-22 22:51:13
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/fb09ca860e53ab32219ae218288690c3addaffa6.png]]
+
+** DONE Walkthroughs
+   CLOSED: [2016-11-24 Thu 21:32]
+N/A
+** TODO Section
+*** TODO Hexadecimal
+
+Hexadecimal is base 16. It makes the mapping easier because a group of four binary digits (Bits) is able has 16 different combination and each of those combinations maps to a single hexadecimal digit.
+
+#+BEGIN_SRC 
+1111 -> 0xf
+
+# Another example
+0100 0110 1010 0010 1011 1001 0011 1101
+   4    6    A    2    B    9    3    D
+0x46A2B93D
+#+END_SRC
+
+Generally memory address in computer is expressed in hexadecimal.
+
+*** TODO Pointer
+
+#+BEGIN_SRC c
+int* foo;
+#+END_SRC
+
+*Pointer* provides an alternative way to pass data between functions in C by reference (The actual value).
+
+Manipulation and use of data can only take place in memory. It is basically a huge array of 8-bit wide bytes.
+
+Each location in memory has an address.
+
+#+BEGIN_QUOTE
+POINTERS ARE JUST ADDRESSES.
+#+END_QUOTE
+
+A pointer is data item whose /value is a memory address/ and its type describe the data located at that memory address.
+
+The usage of pointer,
+
+- =NULL=, points to nothing
+- =&variable=, extract the address of existing variable
+- =*pointer=, dereferencing (Go to the reference and access the data at that location)
+
+Array name is a pointer.
+
+Dereference a pointer points =NULL= may get /Segementation fault/ (Good practice to do).
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-25 at 8.02.44 AM.png @ 2016-11-25 08:03:08
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/98dacf6a8712218557bedcaa487ebdd089215290.png]]
+
+*** TODO Dynamic Memory Allocation
+
+Dynamic allocated memory comes heap (A pool of memory).
+
+Generally, declare a variable with a name, that declared space lives in the stack, declare a variable without a name (Using =malloc()= ) that space lives on the heap.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-25 at 8.17.01 AM.png @ 2016-11-25 08:17:21
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/0e8386c64f50ddedcc92c7511f9450b7d9ef9691.png]]
+
+Use =malloc= to dynamically allocate memory. It return a pointer to the memory after it obtains the memory (Return =NULL= if it could NOT allocate memory for you).
+
+#+BEGIN_SRC c
+// Statically obtain an integer
+int x; 
+
+// Dynamically obtain an integer
+int* px = malloc(4);
+int* py = malloc(sizeof(int));
+#+END_SRC
+
+Dynamically allocated memory is NOT returned after the function which it's created finishes execution. Failing to return allocated memory can cause *memory leak* which compromoise system's performance. IT MUST BE FREEED!
+
+#+BEGIN_SRC c
+int* px = malloc(4);
+free(px);
+#+END_SRC
+
+Three(s) golden rules for dynamic memory allocation,
+
+1. Every block of memory that you =malloc()= must subsequently be =free()=
+2. Only memory that you =malloc()= should be =free()=
+3. Do NOT =free()= a block of memory more than once
+
+*** TODO Structures
+
+Structures unify serveral variables (With logical connection) of different types into a single, new variable type which can be assigned its own type name. Think of a structure like a "Super Variable".
+
+#+BEGIN_SRC c
+  struct car {
+    int year;
+    char model[10];
+    char plate[7];
+    int odometer;
+    double engine_size;
+  }
+#+END_SRC
+
+Structures typically are defined in separate =.h= files.
+
+Use =.= (Dot operator) to access the fields.
+
+#+BEGIN_SRC c
+  // Variable declaration in stack
+  struct car mycar;
+  // Field accessing
+  mycar.year = 2016;
+#+END_SRC
+
+Use =->= (Arrow operator) to access struct lives on the heap,
+
+- It first dereferences the pointer on the left side of operator
+- Then access the field on the right side of operator
+
+#+BEGIN_SRC c
+  // Varaible declaration in heap (`yourcar` pointer lives in STACK, value lives in HEAP)
+  struct car* yourcar = malloc(sizeof(struct car));
+  (*yourcar).year = 2016;
+  yourcar->model = 'Tesla'
+#+END_SRC
+
+*** TODO Defining Custom Types
+
+=struct car mycar;= is pretty long. C allows to create a shorthand/rewriteen name for data types.
+
+#+BEGIN_SRC c
+  // typedef <old name> <new name>;
+  typedef struct car car;
+
+  // Define struct with typedef 
+  // (We can use struct name defined in the first line inside struct itself)
+  typedef struct devise {
+    int year;
+    char model[10];
+  } devise;
+#+END_SRC
+
+*** TODO Recursion
+
+Recursion function is one that, as part of its execution, invokes itself. Every recursive function has two parts,
+
+- The base case which triggered will terminate the recursive process
+- The recursive case where recursion occurs
+
+#+BEGIN_SRC c
+  int fact(int n) {
+    // Base case
+    if (n == 1) {
+      return 1;
+    }
+    // Recursive case
+    return n + factorial(n - 1);
+  }
+#+END_SRC
+
+Generally recursive function replace loops in non-recursive function. It is possible to have multiple /base cases/ and /recursive cases/ depending on the input being passed in.
+
+#+BEGIN_SRC c
+  // Recursive function with multiple base cases
+  int fibonacci(int n) {
+    if (n == 0) {
+      return 0;
+    } else if (n == 1) {
+      return 1
+    } else {
+      return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+  }
+#+END_SRC
+
+Collatz conjecture,
+
+#+BEGIN_SRC c
+  int collatz(int n) {
+    if (n == 1) {
+      return 0
+    } else if (n % 2 == 0) {
+      return 1 + collatz(n / 2);
+    } else {
+      return 1 + collatz(3 * n + 1)
+    }
+  }
+#+END_SRC
+
+*** TODO Call Stack
+
+The function frame/stack frame is that system sets aside space in memory for a function to do necessary work. More than one function's stack frame may exist in memory at a given time.
+
+Frames are arranged in a stack and when a function finishes its work it poped off of the stack. The function picks up immediately where it left off. The stack at the top is the active frame.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-25 at 12.22.43 PM.png @ 2016-11-25 12:23:04
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/c5e5bac5f7da68b5709e1e6111dd7fe506a4b276.png]]
+
+** DONE Shorts
+   CLOSED: [2016-11-24 Thu 21:55]
+*** DONE File I/O
+    CLOSED: [2016-11-24 Thu 21:55]
+
+Under the hood all files are just long sequence of =0= and =1=. Below is the process of file I/O (Code sample is in C),
+
+1. Open the file, =FILE* fp = fopen(argv[1], "w");=
+2. Reading/Writing, =fputs(input, fp);= (Writing to file)
+3. Close the file, =fclose(fp);=
+
+** TODO Problem Set 4
+
+A file is a sequence of bits which arranged in certain fashion.
+
+A void pointer(=void*=) is a pointer that has no associated data type with it. A void pointer can hold address of any type and can be typcasted to any type. http://stackoverflow.com/a/31260836/2226315
+
+*** Remembrance of Data Passed: A Study of Disk Sanitization Practices
+Link below is an article from MIT "Remembrance of Data Passed: A Study of Disk Sanitization Practices",
+
+http://cdn.cs50.net/2015/fall/psets/4/garfinkel.pdf
+
+FAT16 or FAT32, FAT stands for File Allocation Table and is a linked list of disk clusters that DOS uses to manage space on a random-access device; =16= or =32= refers to the sector numbers' bit length.
+
+#+BEGIN_QUOTE
+In most cases, however, =delete= or =erase= commands do not actually remove the file's information from the hard disk.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Although the precise notion of ???erase??? depends on the file system used, in most cases, deleting a file most often merely rewrites the metadata that pointed to the file, but leaves the disk blocks containing the file???s contents intact.
+#+END_QUOTE
+
+Forensic tools are used for recovering hard-disk information. 
+
+*** Valgrind
+
+One of the big bug in C is mismanagement memory. Valgrind can check heap memory allocation and accesses and
+report memory related issues (Such as memory leak).
+
+#+BEGIN_SRC 
+vaglrimd ./program_name
+#+END_SRC
+
+Few key terms,
+
+- =definitely lost=, heap allocated memory without a pointer
+- =indirectly lost=, heap allocated memory to which the only pointers to it are lost
+- =possibly lost=, Valgrind cannot be sure whether there is a pointer or not
+- =still reachable=, heap allocated memory still has a pointer at program exit (Global variable points to it)
+
+#+BEGIN_QUOTE
+Start looking for leaks only after your program is working properly without any other errors.
+#+END_QUOTE
+
+*** Whodunit
+
+TODO:
+
+- Open file
+- Update header info for outfile
+- Read clue scanline, pixel by pixel
+- Change pixel color as necessary
+- Write into verdict scaleline, pixel by pixel
+
+*** Resize
+
+TODO:
+
+- Open file
+- Update header info for outfile
+- Reach each scanline, pixel by pixel
+- Resize horizontally
+- Remember padding!
+- Resize vertically
+
+*** Recover
+
+TODO:
+
+- Open memory card file
+- Find beginning of jpg
+- Open a new jpg
+- Write 512 bytes until new jpg is found
+- Detect end of file
+
+Pseudocode,
+
+#+BEGIN_SRC 
+open card file
+repeat until end of card
+  read 512 bytes into a buffer
+  start of a new jpg?
+    yes -> ...
+    no  -> ...
+  already found a jpg?
+    yes -> ...
+    no  -> ...
+close any remaining files
+#+END_SRC
+
+* TODO Week 05
+** TODO Lecture
+
+This week we look a little more deeply at pointers. The initial value in any potiner is garbage value (Access the garbage value will produce a segementation fault, OS ways of saying No for untouchable memory). Image below is one illustration of segementation fault.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-23 at 6.44.20 AM.png @ 2016-11-23 06:45:21
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/4fb468ed39e6eb09c819887e5132ca4c3e621e3d.png]]
+
+Introduce the idea of /memory leak/. *Valgrind* is a tool that can be used to look for memory leaks in the program, below is one sample usage,
+
+#+BEGIN_SRC bash
+valgrind --leak-check=full ./program
+#+END_SRC
+
+A bad thing about array is that the size of it cannot change dynamically. Introduce the idea of *Linked List*. The size of linked list is dynamic. The price paid for this dynamic are space (Twice the space) and randome access (Square-bracket access, now only linear search is possible).
+
+#+BEGIN_SRC c
+  typedef struct node
+  {
+    int n;
+
+    // Use `struct node*` instead of `node*` because `node` has not declared yet
+    struct node* next; 
+  }
+  node;
+#+END_SRC
+
+** TODO Lecture continued
+
+Code snippet below is a simple implementation of linked list in C,
+
+#+BEGIN_SRC c
+  typedef struct node {
+    int n;
+    struct node* next;
+  } node;
+
+  bool search(int n, node* list) {
+    node* ptr = list;
+    while (ptr != NULL) {
+      if (ptr->n == n) {
+        return true;
+      }
+      ptr = ptr->next;
+    }
+    return false;
+  }
+#+END_SRC
+
+A simple implementation of struct,
+
+#+BEGIN_SRC c
+  typedef struct {
+    int numbers[CAPACITY];
+    int size;
+  } stack;
+#+END_SRC
+
+A better but more complex (Developer time) implementation of struct,
+
+#+BEGIN_SRC c
+  typedef struct {
+    int* numbers;
+    int size;
+  } stack;
+#+END_SRC
+
+A simple implemenattion of queue,
+
+#+BEGIN_SRC c
+  typedef struct {
+    int front;
+    int numbers[CAPACITY];
+    int size;
+  } queue;
+#+END_SRC
+
+And better implementation,
+
+#+BEGIN_SRC c
+  typedef struct {
+    int front;
+    int* numbers;
+    int size;
+  } queue;
+#+END_SRC
+
+=malloc= allocates memory inside the heap instead of the stack.
+
+Image blow illustrate the idea of *Buffer Overflow*,
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Overflow.png @ 2016-11-23 07:40:40
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/e76247c943476c880294710aff82a0ad174aca71.png]]
+
+
+Buffer overflow attact at its core is overriding of an array that did not have its boundaries checked.
+
+Introduce the notion of a *Tree*.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-23 at 7.49.11 AM.png @ 2016-11-23 07:49:29
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/ca51fd79b0aba81bc063d6de18dca9630661bb4f.png]]
+
+*Binary search tree*, a fancier incarnations of trees (Each node with no more than two children and first child value should be less than second child if there is one),
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-23 at 7.50.20 AM.png @ 2016-11-23 07:50:32
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/b851b0ff20c248444d0879564d34d4ea5a7226a1.png]]
+
+#+BEGIN_SRC c
+  typedef struct node {
+    int n;
+    struct node* left;
+    struct node* right;
+  } node;
+
+  bool search(int n, node* tree) {
+    if (tree == NULL) {
+      return false;
+    } else if (n < tree->n) {
+      search(n, tree->left);
+    } else if (n > tree->n) {
+      search(n, tree->right);
+    } else {
+      return true;
+    }
+  }
+#+END_SRC
+
+Introduce the idea of *Hash Table*. Look at the input and put it in a certain place based on the value.
+
+#+BEGIN_SRC 
+
+##########
+  #    #
+  #    #
+#+END_SRC
+
+Okay, above is a joke.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Hashtable.png @ 2016-11-23 22:07:34
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/025987f18b7c9af8e934b6019f2b6f36c193c31a.png]]
+
+Image above are two ways of implementing hash table (Second one is called separate chaining).
+
+Introduce the idea of *Trie* (Short for retrieval).
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-23 at 10.08.31 PM.png @ 2016-11-23 22:08:51
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/8873fb8d465bc1d8dab524355705a086a3f3dde7.png]]
+
+* TODO Week 06
+** TODO Lecture
+
+FOR YOUR INFORMATION, THERE IS NO LECTURE CONTINUE IN WEEK SIX.
+
+*SHA1* takes big chunk of zeros and ones and shrinks it down to just a few bits.
+
+Start the journey of the Internet and Cloud.
+
+DHCP server is a dynamic host configuration protocol which assgin an unique address for the new device to the network.
+
+IP (Internet Protocol) is a dotted decimal number each of those happens to be a number between 0 and 255 (IPv4, 32-bit which is about 4 million), a sample IP address for local host machine is =127.0.0.1=. IPv6 is 128-bit.
+
+Introduce the idea of *router* and *private IPs*.
+
+Introduce the idea of *DNS* (Domain Name Server).
+
+Load balance server is short is a few devices spreading the load across more servers.
+
+=traceroute= can trace the routers between client and server (Below is a sample output).
+
+#+BEGIN_SRC 
+➜  XX_OneYearChallenge git:(master) ✗ traceroute -q 1 li-xinyang.com
+traceroute: Warning: li-xinyang.com has multiple addresses; using 104.24.101.188
+traceroute to li-xinyang.com (104.24.101.188), 64 hops max, 52 byte packets
+ 1  183.90.44.65 (183.90.44.65)  4.064 ms
+ 2  183.90.44.162 (183.90.44.162)  3.993 ms
+ 3  183.90.44.17 (183.90.44.17)  4.148 ms
+ 4  sh.gw5.sin1.10026.telstraglobal.net (203.192.169.41)  4.033 ms
+ 5  be2.gw3.sin3.10026.telstraglobal.net (61.14.157.165)  5.707 ms
+ 6  cdf-0014.10026.telstraglobal.net (203.192.169.226)  5.045 ms
+ 7  104.24.101.188 (104.24.101.188)  4.438 ms
+#+END_SRC
+
+Introduce the idea of *packets*.
+
+Introduce the idea of TCP, which is use in conjunction with IP and other things to guarantees delivery.
+
+Introduce *ports* which identifies the applications running on the server.
+
+Introduce *firewall* which blocks requests for a range of IP addresses and ports.
+
+*HTTP*, Hyper Text Transfer Protocol. A protocol is just a set of convention.
+** TODO Problem Set 5
+* TODO Week 07
+** DONE Lecture
+   CLOSED: [2016-11-24 Thu 13:53]
+
+Introduces HTML and HTTP requests.
+
+** DONE Lecture continued
+   CLOSED: [2016-11-24 Thu 14:28]
+
+Introduce PHP. The major difference is that there is NO =main= function in PHP.
+
+Variable is a loosely typed in PHP.
+
+Learn more PHP syntax and usage from link below, https://learnxinyminutes.com/docs/php/.
+
+Code snippet below is "Hello World" in PHP,
+
+#+BEGIN_SRC php
+  <?php
+  print('Hello '); // Prints "Hello " with no line break
+  echo "World\n"; // Prints "World" with a line break
+  ?>
+#+END_SRC
+
+Blow are some superglobals from PHP,
+
+#+BEGIN_SRC php
+$_COOKIE
+$_GET
+$_POST
+$_SERVER
+$_SESSION
+...
+#+END_SRC
+
+** TODO Problem Set 6
+* TODO Week 08
+** DONE Lecture
+   CLOSED: [2016-11-24 Thu 14:42]
+
+Continue on the usage of PHP.
+
+Introduce the idea of MVC (Model, View, Controller), a program paradigm.
+
+Introduce the idea of SQL (Structured Query Language). It has four (4) key functions, =SELECT=, =INSERT=, =UPDATE=, =DELETE=, etc.
+
+** DONE Lecture continued
+   CLOSED: [2016-11-24 Thu 15:03]
+
+Continue on the usage of SQL.
+
+Introduce the idea of SQL injection attacks. PHP code below prevent it from happening (Escape dangerous characters),
+
+#+BEGIN_SRC php
+query("SELECT * FROM users WHERE username=? AND password=?", $username, $password);
+#+END_SRC
+
+** TODO Problem Set 7
+* TODO Week 09
+** DONE Lecture
+   CLOSED: [2016-11-24 Thu 15:24]
+
+Introduce JavaScript.
+
+Introduce DOM (Document Object Model) tree.
+
+Introduce the idea of AJAX (Asynchronous JavaScript and XML).
+
+** DONE Lecture continued
+   CLOSED: [2016-11-24 Thu 15:26]
+
+Continue on JavaScript.
+
+Introduce the idea of callback function.
+
+** TODO Problem Set 8
+* DONE Week 10
+  CLOSED: [2016-11-24 Thu 17:15]
+** TODO Lecture
+
+Introduce the idea of cyber security.
+
+** TODO Lecture continued
+
+Visitor lecture who introduces the idea of AI. 
+
+* TODO Week 11
+** TODO Lecture
+
+Introduce the idea of *Search Trees*. It lists all of the possibilities and all of the paths.
+
+** TODO Lecture continued
+** TODO AI Series
+* TODO Week 12
+** TODO Lecture
+** DONE Seminars
+   CLOSED: [2016-11-24 Thu 17:23]
+
+The seminars playlist on YouTube for 2015 and 2016 can be found at links below,
+
+2015: https://www.youtube.com/playlist?list=PLhQjrBD2T3819vqFDQ-EUVhjBxpU0fwKC
+
+2016: https://www.youtube.com/playlist?list=PLhQjrBD2T382IHcDBSQYC4ZG4C2aTiA6C 
+
+*** Contain Yourself: An Intro to Docker and Containers
+
+ The KILLER features of Docker are *SPEED*, *LIGHTWEIGHT*, *RELIABLE DEPLOYMENT*, *PORTABILITY*, etc.
+
+ The use cases are *DEVELOPMENT*, *TESTING*, *PRODUCTION*.
+
+ Traditional architecture (Pre-200)
+
+ - One server -> One application
+ - Single Stack -> Single Language
+ - More computer -> More servers
+ - Expensive, slow and inefficient
+
+ Virtualization (2000s)
+
+ - One server -> Mutiple VMs, multiple stacks, multiple applications
+ - More compute -> More VMs
+ - 10s of VMs per server
+ - Enabled cloud computing
+
+ #+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-24 at 9.32.05 AM.png @ 2016-11-24 09:32:22
+ [[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/9e0cd492ddec1111adafacadfa446fd145f5042e.png]]
+
+ Containerization is operation system virtualization which is lightweight, isolated, runnable, protable and provide new way to pakcage everything that an app needs to run.
+
+ *Docker* is open plantform to easily build, ship, run lightweight portable self-sufficient app containers anywhere.
+
+ #+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-24 at 9.39.28 AM.png @ 2016-11-24 09:39:42
+ [[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/55940aa2a495d554c85388473174cbe820e21890.png]]
+
+ There are five(5) major components, Engine, Client, Images, Container and Registry.
+
+ *Engine* is a /Daemon on Host/. It works on Linux and Windows. It is used to build/pull/push images, run/mangage containers and provide HTTP REST API.
+
+ #+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-24 at 9.42.15 AM.png @ 2016-11-24 09:42:24
+ [[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/5e7282ed5165aaff3881ccb38f0e6a88c7d53e49.png]]
+
+ *Client* uses HTTP it is installed with Engine on local or remote calls and it can be used via GUI or command-line.
+
+ #+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-24 at 9.43.37 AM.png @ 2016-11-24 09:43:53
+ [[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/ba9ea6bf30379bfb44ef8b42dbf98c498f1664cc.png]]
+
+ #+BEGIN_SRC bash
+ # Show docker version
+ docker version
+
+ # Show docker info.
+ docker info
+
+ # Show docker status
+ docker ps
+
+ # Run docker
+ docker run containername [COMMAND]
+ #+END_SRC
+
+ *Images* are read-only (Immutable, reusable) collection of files. It uses Union File System (UFS).
+
+ *Container* is "VM-like" which run isolated processes in read-write layer. Copy-On-Write (COW) is a similar strategy of sharing and copying. In this strategy, system processes that need the same data share the same instance of that data rather than having their own copy.
+
+ Docker uses a copy-on-write technology with both images and containers.
+
+ Docker uses two (2) key Linux kernel featuers for isolation purpose,
+
+ 1. Namespaces, =pid=, =user=, =network=, =ipc= to control what can you ses
+ 2. Cgroups, CPU, memory, disk I/O to control what can you use
+
+ Three options to process of creating/altering/commiting containers,
+
+ - Manual run + commit (Install everything you need in Docker)
+ - Dockerfile (A text file similar to Vagrantfile)
+ - Import tarball
+
+ Images below illustrate the image building process,
+
+ #+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-24 at 9.57.10 AM.png @ 2016-11-24 10:02:05
+ [[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/8dfbafe62697d90c493fa5dfa8137805aeb08059.png]]
+
+
+ *Registry* is a way to do image distribute. It is used for team collaboration and workfolow automation.
+
+ To reproduce the presentation slices,
+
+ #+BEGIN_SRC bash
+ docker run -d -P nicolaka/cs50
+ #+END_SRC
+*** Chrome Extensions
+
+ Chrome Extensions is lightweight tool to custmoization the web experience.
+
+ A manifest file is required for a Chrome extension.
+
+ Below are few things an extension could acomplish.
+
+ - Browser action, accessible regarless of page
+ - Page action, affects individual pages
+ - Background script
+ - Content script, provide direct access to the DOM
+ - Page override, change from default (overwrite) bookmark manager, history, tab
+ - =chrome.*= APIs, other advanced features
+
+ Chrome also provides an option page for extension.
+
+ NOT all featureas are usable witout promissions from user.
+
+ Extensions can be published through Google Web Store via Developer Dashboard.
+*** Web Scraping with Nokogiri/Kimono
+
+ #+BEGIN_SRC ruby
+   require 'nokogiri'
+   require 'open-uri'
+
+   doc = Nokogiri::HTML(open('https://boston.craigslist.org/search/bik'))
+   path = doc.css("span.text a")[0]['href']
+
+   puts path
+ #+END_SRC
+
+ Poltergeist, a PhantomJS driver for Capybara. https://github.com/teampoltergeist/poltergeist
+
+ The most robust way is to Selenium with regular browser.
+** TODO Final Project

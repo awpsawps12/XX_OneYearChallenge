@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "0.12"
+before_install:
+  - sudo apt-add-repository -y ppa:ubuntu-elisp/ppa
+  - sudo apt-get update
+  - sudo apt-get install emacs-snapshot
+  - wget http://orgmode.org/org-8.3.6.tar.gz
+  - tar xzf org-8.3.6.tar.gz
+script: bash ./deploy.sh
+after_success:
+  - surge --project . --domain challenge.li-xinyang.com

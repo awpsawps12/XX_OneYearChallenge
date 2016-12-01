@@ -1,0 +1,351 @@
+# -*- mode: Org; org-download-image-dir: "./imgs/"; -*-
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"/>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/languages/lisp.min.js"></script>
+#+HTML_HEAD: <script>hljs.initHighlightingOnLoad();</script>
+#+HTML_HEAD: <script src="../assets/js/hl_toc.js"></script>
+#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1">
+
+#+AUTHOR: Li Xinyang
+#+CREATOR: Li Xinyang
+#+TITLE: How to Code: Systematic Program Design - Part 1
+#+EMAIL: mail@li-xinyang.com
+
+* Language
+
+The language used for this course is *Beginning Student Language*.
+
+The detailed syntax guide can be found at link below,
+
+https://courses.edx.org/courses/course-v1:UBCx+SPD1x+2T2016/a24b7341216346f2a5c99c6391f64229/
+
+* TODO Introduction
+** TODO Welcome
+
+The thing make program hard to write is the poorly formed problem. There are many issues like,
+
+- The task description is incomplete/inconsistent
+- Program is too big
+
+Design method break big problem into manageable chunks (Well-chosen smaller pieces). All programmer need to do is to write one part of the program for each small problem which make the result easy to read and modify.
+
+#+BEGIN_QUOTE
+Any program that's actually userful, ends up needing to be modified.
+#+END_QUOTE
+
+The goal for this course is learn to write code that is being formed of nice pieces which fit together well, are well tested, and easy to modify.
+
+Systematic program design is to transfer the poorly formed problem to well structured solution.
+
+The techniques learn in this course can be used with any other programming language you may learn in the future. The focuse of this course is the design method rather than language itself.
+
+** DONE Course Organization
+   CLOSED: [2016-11-29 Tue 21:41]
+
+** DONE Syllabus
+   CLOSED: [2016-11-29 Tue 21:41]
+N/A
+** DONE Grading
+   CLOSED: [2016-11-29 Tue 21:41]
+N/A
+** DONE Grading
+   CLOSED: [2016-11-29 Tue 21:42]
+N/A
+** TODO Study Tipes
+
+There are 10 suggestions for this course, detailed can be found at link below,
+
+https://courses.edx.org/courses/course-v1:UBCx+SPD1x+2T2016/courseware/d4b5b9454a3e47689c866b557162d73d/ce62429af48f406eaa792520ef45cd06/
+
+The first and most important one is (I call this tips Number 0),
+
+#+BEGIN_QUOTE
+Program design is something you learn by doing
+#+END_QUOTE
+
+1. Do not working about making mistakes
+2. Try it!
+3. Take advantage of discussion
+4. Stay caught up
+5. Take notes (Focus on the design process, NOT the solution)
+6. Work bit by bit every day
+7. Always be able to identify what step you are on
+8. Ask for help if you stuck for more than 5-10 minutes
+** DONE Course Team
+   CLOSED: [2016-11-29 Tue 21:48]
+N/A
+** DONE Module Wrap-Up
+   CLOSED: [2016-11-29 Tue 21:48]
+N/A
+* TODO 1a: Beginning Student Language
+** DONE Module Overview
+   CLOSED: [2016-11-29 Tue 21:57]
+
+The course is targeted to student with no progrmaming experience, so be patient at the beginning.
+
+The learning goals for this module (Copy-paste from course material),
+
+- Be able to write expressions that operate on primitive data including numbers, strings, images and booleans.
+- Be able to write constant and function definitions.
+- Be able to write out the step-by-step evaluation of simple expressions including function calls.
+- Be able to use the stepper to automatically step through the evaluation of an expression.
+- Be able to use the Dr Racket help desk to discover new primitives.
+
+** TODO Expressions
+
+To form an expression,
+
+#+BEGIN_SRC 
+<value>
+(<primitive> <expression> ...)
+#+END_SRC
+
+#+BEGIN_QUOTE
+You can be a very good program designer without knowing a lot of math. Programs in graphics or vision or machine learning where you need to know a lot of math that is because you need to understand that domain.
+#+END_QUOTE
+
+** TODO Evaluation
+
+A detailed rules should be understand to understand a big program.
+
+Primitive Call Rule, to evaluate a primitive call,
+
+1. Reduce operands to values
+2. Apply primitive to the values
+
+The expression evaluation proceeds from left to right and from inside to outside. 
+
+** TODO Strings and Images
+
+Introduce two primitive values, strings and images.
+
+To form a string,
+
+#+BEGIN_SRC 
+"This is a sample string."
+#+END_SRC
+
+=string-append= puts two/more string one after others.
+
+=string-lengh= gets the length of the string.
+
+=substring= is similar to =str_var[start:end]= in Python.
+
+=(require 2htdp/image)= is used to show images. 
+
+=above= produces an image with all arguments stacked up and lined up on horizontal centers.
+
+=overlay= produces images on top of the other.
+
+** TODO Constant Definitions
+
+To form a constant definition,
+
+#+BEGIN_SRC 
+(define <name> <expression>)
+#+END_SRC
+
+Constant definition evaluation rules,
+
+- Evaluate a constant definition: evaluate the expression and record the value as the constant value with the given name
+- Evaluate a defined constant name: value is the recorded value
+
+#+BEGIN_QUOTE
+The notion of defining name constants is going to have a big effect on making our programs comprehensible to other programmers and easy to change in the future.
+#+END_QUOTE
+
+** TODO Function Definitions
+
+Function definition rules,
+
+#+BEGIN_SRC 
+(define (<function_name> <parameter_name> ...)
+  <expression>)
+#+END_SRC
+
+Snippet below is a sample function definition in BSL,
+
+#+BEGIN_SRC lisp
+  (define (pythag a b)
+    (sqrt (+ (sqr a) (sqr b))))
+#+END_SRC
+
+Function call expression, 
+
+#+BEGIN_SRC 
+(<name-of-defined-function> <expression> ...)
+
+(pythag 3 4)
+#+END_SRC
+
+To evaluate function call,
+
+- Reduce operands to values
+- Replace function call by body of function in which every occurrence of parameters are replaced by corresponding argument
+
+** TODO Booleans and if Expressions
+
+True/False program is fundamental for computer.
+
+To form an =if= expression,
+
+#+BEGIN_SRC 
+(if <expression>  ;; question
+    <expression>  ;; true answer
+    <expression>  ;; false answer
+)
+#+END_SRC
+
+The question expression has to produce boolean value to make it a valid =if= expression.
+
+To evaluate an if expression,
+
+- If the question is not a value evaluate it and replace it with a value
+  - If the question is true replace entire if expression with true answer expression
+  - If the question is false replace entire if expression with false answer expression
+  - the question is value other than true or false so produce an error
+  
+To form a boolean condition expression,
+
+#+BEGIN_SRC 
+(and <expression1> <expression2>)
+
+(or <expression1> <expression2>)
+
+(not <expression>)
+#+END_SRC
+
+As soon as an expression produces =true=, other expressions to the right of it are NOT evaluated.
+
+** DONE Using the Stepper
+   CLOSED: [2016-11-30 Wed 14:15]
+
+Stepper is a debug tool in *DrRacker* which evaluate an expression one step at a time.
+
+** TODO Discovering Primitives
+
+Two methods are commonly used,
+
+1. Guess
+2. Search and scroll (Check the documentation)
+
+** DONE Practice Problems
+   CLOSED: [2016-11-30 Wed 14:52]
+
+N/A
+
+** DONE Module Wrap-Up
+   CLOSED: [2016-11-30 Wed 14:52]
+
+#+BEGIN_QUOTE
+Learning how to write code that looks like the design.
+#+END_QUOTE
+
+* TODO 1b: How to Design Functions
+** TODO Module Overview
+
+The learning goals (Copy-paste from course page),
+
+- Be able to use the How to Design Functions (HtDF) recipe to design functions that operate on primitive data.
+- Be able to read a complete function design and identify its different elements.
+- Be able to evaluate the different elements for clarity, simplicity and consistency with each other.
+- Be able to evaluate the entire design for how well it solves the given problem.
+** TODO Full Speed HtDF Recipe
+
+*HtDF Recipe* stands for /How to Design Function Recipe/, which systematizes the function design process. It makes the process clear and guarantee the function quality.
+
+Design recipe makes hard problem easier, but make the easy problem cumbersome.
+
+The HtDF recipe consists of the following steps,
+
+1. Signature, purpose and stub
+2. Define examples, wrap each in check-expect
+3. Template and inventory
+4. Code and function body
+5. Test and debug until correct
+
+#+BEGIN_SRC lisp
+  ;; 1-1) Signature
+  ;; Number -> Number
+
+  ;; 1-2) Purpose
+  ;; Produce 2 times the given number
+
+  ;; 1-3) Stub
+  (define (double n) 0)
+
+  ;; 2) Examples/tests
+  (check-expect (double 3) 6)
+  (check-expect (double 4.2) 8.4)
+
+  ;; 3) Template
+  ;; (define (double n)
+  ;;   (... n))
+
+  ;; 4) Code and function body
+  (define (double n)
+    (* 2 n))
+
+  ;; 5) All tests pass
+#+END_SRC
+
+** TODO Slow Motion HtDF Recipe
+
+Pay attention to each step in the recipe because every step is intented to help with all the steps after it.
+
+*1.1 Signature*
+
+To form a signature,
+
+#+BEGIN_SRC 
+Type ... -> Type
+#+END_SRC
+
+which declares type of data function consumes and produces. 
+
+*1.2 Purpose*
+
+The purpose is a one line description of what the function produces in term of what it consumes.
+
+*1.3 Stub*
+
+Stub is like piece of scaffolding, which used to avoid function undefined error or alike. It is a function definition,
+
+- Has correct function name
+- Has correct number of arguments
+- Produces dummy result of correct type
+
+*2 Example/Test*
+
+They help to understand what function must do. Use multiple examples to illustrate behavior. Wrapping in =check-expect= makes them serve as unit tests for completed function.
+
+*3 Template & Inventory*
+
+Template is the function outline.
+
+*4 Code Body*
+
+All previous steps help to know how to complete the function body.
+
+*5 Test and debug*
+
+Run the tests.
+
+** TODO A Simple Practice Example
+** TODO When Tests are Incorrect
+** TODO Varying Recipe Order
+** TODO Poorly Formed Problems
+** TODO Practice Problems
+** TODO Quiz
+** TODO Module Wrap Up
+* TODO 2: How to Design Data
+* TODO 3a: How to Design Worlds
+* TODO 3b: Compound Data
+* Appendix
+
+Course glossary can be found at link below,
+
+https://courses.edx.org/courses/course-v1:UBCx+SPD1x+2T2016/d192723b104b4c8093aa0c0fc117e97f/

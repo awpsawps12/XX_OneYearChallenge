@@ -1,0 +1,170 @@
+#!/usr/local/bin/ruby
+
+# TomDoc for Ruby is used for code documentation specification
+# http://tomdoc.org/
+
+require 'aws-sdk'
+require 'digest'
+require 'dotenv'
+require 'find'
+
+S3_REGION = 'ap-southeast-1'
+S3_BUCKET = 'cs-challenge'
+S3_URL    = 'https://cs-challenge.s3-ap-southeast-1.amazonaws.com/'
+
+Dotenv.load
+
+# Internal: Check file type is image. Return true if the file is image,
+# else return false.
+# File type check based on file extension, a better solution is needed.
+# Use Magick, http://stackoverflow.com/a/37817132/2226315
+#
+# path - Image path on local machine
+#
+# Examples
+#
+#   is_image?('./path/to/image/foo.png')
+#     => true
+#
+# Return bool
+def image?(path)
+  ext = File.extname(path).upcase[1..-1]
+  %w(JPG PNG JPEG GIF).include?(ext)
+end
+
+# Internal: Process org file by uploading image and replace the local path
+# to Amazon S3 CDN path
+#
+# path - Org file path on local machine
+#
+# Examples
+#   process_org('./path/to/org/file.org')
+def process_org(path)
+  content = File.read(path)
+
+  content_new = content.gsub(/\[\[(.*)\]\]/) do |target|
+    if target.include?('][') || target.include?('[[https:')
+      target
+    else
+      link = target.match(/\[\[(.*)\]\]/).captures[0]
+      link = link[5..-1] if link.start_with?('file:')
+      link = link[2..-1] if link.start_with?('./')
+      link = "#{File.dirname(path)}/#{link}"
+      link = link[2..-1] if link.start_with?('./')
+      url = upload_image(link)
+      "[[#{url}]]"
+    end
+  end
+
+  File.open(path, 'w') { |f| f.puts(content_new) }
+end
+
+# Internal: Generate unique image key with file extension based on local
+# image path using SHA1
+#
+# path - Image path on local machine
+#
+# Examples
+#
+#   generate_key('./path/to/image/foo.png')
+#     =>  '4659d94e7082a65ca39e7b6725094f08a413250a.png'
+# Return string
+def generate_key(path)
+  "#{Digest::SHA1.hexdigest(path)}#{File.extname(path).downcase}"
+end
+
+# Internal: Get S3 resources
+#
+# region - Amazon S3 region
+# id     - Amazon access key id
+# key    - Amazon secret key
+#
+# Examples
+#
+#   amazon_resource(region, id, key)
+#     => object
+#
+# Return object
+def amazon_resource(region, id, key)
+  Aws::S3::Resource.new(
+    region: region,
+    credentials: Aws::Credentials.new(id, key)
+  )
+end
+
+# Internal: Upload image to Amazon S3. Return CDN image path if upload
+# successfully, else raise an exception.
+#
+# path - Image path on local machine
+#
+# Examples
+#
+#   upload_image('./path/to/image/foo.bar')
+#     => Exception
+#
+#   upload_image('./path/to/image/foo.png')
+#     => 'https://example.com/oiqwenak.png'
+#
+# Return string
+def upload_image(path)
+  raise 'Invalid file type' unless image?(path)
+
+  s3 = amazon_resource(S3_REGION, ENV['AWSAccessKeyId'], ENV['AWSSecretKey'])
+  key = generate_key(path)
+  obj = s3.bucket(S3_BUCKET).object(key)
+  obj.upload_file(path, acl: 'public-read')
+  obj.public_url
+end
+
+# Internal: Find file with target extension and return an array
+# contains all matched files' path.
+# The default file type is 'org' for org-mode file
+#
+# path - The root path for the recursive finding process
+# ext  - An optional dict can be used to customize the target file extension
+#
+# Examples
+#
+#   find_files_with_ext('./dir_path', ext: 'org')
+#     => ['a.org', 'b.org']
+#
+# Return array
+def find_files_with_ext(path, options = {})
+  options = { ext: 'org' }.merge(options)
+  ext_str = ".#{options[:ext]}"
+
+  paths = []
+  Find.find(path) do |p|
+    paths << p if p.end_with?(ext_str)
+  end
+
+  paths
+end
+
+# Internal: Add all changes and commit with current datetime in UTF as message
+#
+# Examples
+#
+#   publish
+#     => nil
+#
+# Return nil
+def publish
+  timestamp = Time.now.getutc
+
+  # Push files to remote repository
+  `
+  git pull origin master
+  git add --all
+  git commit -m "Update at #{timestamp}"
+  git push origin master
+  `
+
+  nil
+end
+
+find_files_with_ext('.').each do |file_path|
+  process_org(file_path)
+end
+
+publish

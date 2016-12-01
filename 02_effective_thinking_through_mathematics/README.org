@@ -1,0 +1,382 @@
+# -*- mode: Org; org-download-image-dir: "./imgs/"; -*-
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"/>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/languages/lisp.min.js"></script>
+#+HTML_HEAD: <script>hljs.initHighlightingOnLoad();</script>
+#+HTML_HEAD: <script src="../assets/js/hl_toc.js"></script>
+#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1">
+
+#+AUTHOR: Li Xinyang
+#+CREATOR: Li Xinyang
+#+TITLE: Effective Thinking Through Mathematics
+#+EMAIL: mail@li-xinyang.com
+
+* TODO Course Introduction
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-24 at 6.00.46 PM.png @ 2016-11-24 18:01:19
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/643f037a2b0872e3e0344dd12cb55ed32ff4b490.png]]
+
+** TODO Welcome from Dr. Starbird
+
+#+BEGIN_QUOTE
+If you want to really learn, the goal is to change yourself, to become a different person.
+#+END_QUOTE
+
+Below are five elements of effective thinking,
+
+- Understand deeply, understand simple things deeply with far greater precision, nuance, and depth
+- Make mistakes, it is directive
+- Raise Questions, it can have profound energizing effect on your inner life
+- Follow the flow of ideas
+- The quintessential (典型的) element (Change), it is the goal of this course
+
+The strategy of this course is to /participate/ (Active in thinking for yourself). 
+
+** TODO Introduction to the Team
+
+The first teast of /effective thinking/ is to learn how to produce new idea(s) but learn/get from others or rely on the advise of others. In short try to be a producer of knowledge rather than a consumber of knowledge.
+
+** DONE Introduce Yourself!
+   CLOSED: [2016-11-24 Thu 18:12]
+
+N/A
+
+** DONE How does the course work? Grading, Certificates and Participation
+   CLOSED: [2016-11-24 Thu 18:13]
+N/A
+
+* TODO Week 1: The Meanie Genie Puzzle
+** TODO A Quick Note
+
+Work on an idea with a group is generally better.
+
+#+BEGIN_QUOTE
+Continually pushing yourself to understand things better is an extermely potent method for making yourself more successful.
+#+END_QUOTE
+
+If you are honest with yourself about what you actually understand and do NOT understand, you are in the most productive state in your mental life. You make progress when you are in the productive state in your mental life.
+
+In short, *ALWAYS BEING HONEST TO YOURSELF AND OTHERS ABOUT WHAT YOU KNOW AND WHAT YOU DO NOT KNOW*, and this will change your life.
+
+** TODO The Puzzle
+
+Truely understand what the question is (What is really essential) always a great place to start (And important step to do) when solving any kind of challenge.
+
+#+BEGIN_QUOTE
+Unconvering the essence involves specifying what cannot be ignored and identifying and ignoring all of the distracting features that should be ignored.
+#+END_QUOTE
+
+** TODO Working Through the Puzzle
+
+#+BEGIN_QUOTE
+Every single creative success ha been built on the ash heap of failed attempts.
+#+END_QUOTE
+
+Willing to make mistakes is one of the most productive strategies to get new idea and move learning forward. Do NOT ignore mistakes but relish (享受) it and learn from it. Never feel bad about making mistake because you are actually making progress.
+
+#+BEGIN_QUOTE
+They (The mistakes) highlight unforseen opportunities and holes in your understanding.
+#+END_QUOTE
+
+** TODO How will this apply to my life? The takeaway
+
+It is always better to systematically list all the possibilities and record the mistakes you have had made. The process of eliminate the bad option is also a way to make progress to find the real solution.
+
+It is often easier to start at the exit and trace backwards to the entrance.
+
+#+BEGIN_QUOTE
+Change is the universal constant that allows you to get the most out of living and learning.
+#+END_QUOTE
+
+* TODO Week 1: A Shaky Story
+** TODO A Shaky Story
+
+One way to solve a problem is to simplify it (Make it into manageable chunks OR ridiculously simple). When you solved the simplifed version, then you can apply the insights to solve more complex one.
+
+When you feel a question is boring one, it most likely that you have not thought of that question. Raising a question is one of the best strategies for creating success and insight.
+
+*ALWAYS FOCUS ON THE REAL QUESTION*
+
+#+BEGIN_QUOTE
+Constantly create questions to clarify and extend your understanding. What's the real question? Working on the wrong questions can waste a lifetime.
+#+END_QUOTE
+
+** DONE End of Week 1
+   CLOSED: [2016-11-26 Sat 19:20]
+
+N/A
+
+* TODO Week 2: The Puzzle of the Pirates and the Admirals
+** TODO The Puzzle of the Pirates and the Admirals
+
+It is a good habit to write/draw something down while solving a problem.
+
+Try something often is a great strate to start.
+
+** TODO Tips and Strategies
+
+Continue write/draw untile dead end (Do NOT jump steps, which introduce complexity), otherwise it turns to be thingking randomely about possibilities.
+
+#+BEGIN_QUOTE
+One of the reasons people fail to make innovative solutions is that they have in mind some bias that thing is NOT going to work. So they do NOt explore a possibility.
+#+END_QUOTE
+
+When you deal with a challenge you many want to try ALL (EVERY SINGLE ONE OF THEM) possibilities. 
+
+#+BEGIN_QUOTE
+The time you work on a problem is after you are solved it.
+#+END_QUOTE
+
+Solve a problem gives you an "insight" which allow you to extend progress even further. A little progress is just an oppotunity to make more. This is one illustration of "Follow the flow of ideas".
+
+The norm (基准) for everything in life (Reality of life) is "under construction" but in "perfect".
+
+** TODO The Solution and Extra Thoughts
+
+Strategies of thinking for course "Effective Thinking Through Mathematics",
+
+- Go ahead and try things! (One decision leads to many; The MOST important strategy is DO/TRY it)
+- Be methodical (有条理的) and systematic
+- Explore all of the possibilities
+- Draw a picture
+
+* TODO Week 2: Towers of Hanoi
+** TODO Towers of Hanoi
+
+#+BEGIN_QUOTE
+Enjoy challenges is one of the most important things to be successful in life.
+#+END_QUOTE
+
+Playing puzzle fource yourself to become more able to think.
+
+#+BEGIN_QUOTE
+The whole of mathematics and science is merely a refinement of everyday thinking of everyday thinking.
+#+END_QUOTE
+
+Do NOT do a big problem, do a related simple problem (Manageable chunk) and use the "insight" to solve the big problem.
+
+In reality, the expert is actually doing a different task compare to the beginner. (Think of the professional tennis player exaple) An expert understand why every step fits where it is.
+
+* TODO Week 2: Extra Puzzles
+** TODO Extra Puzzles
+** DONE Puzzle Quiz
+   CLOSED: [2016-11-26 Sat 22:56]
+N/A
+
+* TODO Week 3: Infinity
+** TODO A Quick Note
+   
+Infinity goes beyond what numbers are.
+
+#+BEGIN_QUOTE
+Human beings have had a great triumph (胜利) to find a way to reason about something as vast as infinity.
+#+END_QUOTE
+
+It represent one of the prime stategies for effective thinking, which is to look at simple things deeply and see what the consequences are of understanding simple things with such clarity that they propel you into the unknown.
+
+#+BEGIN_QUOTE
+In order to identify and come to grips with the /essentials of a problem/, it is important to determine whether various aspects of the problem are important or not.
+#+END_QUOTE
+
+** TODO Counting Before You Can Count
+
+Flash one-to-one aligned ping-pong balls in front of you and you can immediately knows the quantity are the same but you may NOT know the exactly quantity for each group.
+
+#+BEGIN_QUOTE
+Two collections whose elements can be paired up into one-to-one correspondence have the same size.
+#+END_QUOTE
+
+** TODO A Barrel of Ping Pong Balls
+
+Think the question "Does the following equation the same? $\infty\ne\infty-1$ OR $\infty = \infty - 1$".
+
+#+BEGIN_QUOTE
+One of the wonderful features about learning new ideas or creating new ideas is struggle and uncertainty and vagueness.
+#+END_QUOTE
+
+*Same cardinality* is two collections whose elements can be paired up in to one-to-one correspondence (Each element of one collection matches exactly one element in the other), are said to have the same cardinality(size)
+
+What is the size of a set in mathematic term? It is known as cardinality of the set.
+
+** TODO The Infinity Inn
+
+#+BEGIN_QUOTE
+One of the MOST productive strategies you will ever learn and ever use in your whole life is to take ideas that worked before and use them again.
+#+END_QUOTE
+
+Think about the design pattern example. Use things that you have done before is the best source for creative work.
+
+** TODO How Big Are the Integers?
+
+#+BEGIN_QUOTE
+One of the most important part of solving a challenging question is to understand what the question is.
+#+END_QUOTE
+
+The question for this section is "Why the cardinality of the natural numbers the same as the cardinality of all the integers?".
+
+To understand the question above, first have to understand what are *natural numbers*, *integers*, *have the same cardinality*.
+
+| Replace                          | With                                                                                                       |
+|----------------------------------+------------------------------------------------------------------------------------------------------------|
+| integers                         | set of numbers {..., -3, -2, -1, 0, 1, 2, ...}                                                             |
+| natural numbers                  | set of positive whole numbers {1, 2, 3, ...}                                                               |
+| have the same cardinality (基数) | Can be paired up in such a way that each number in one set pairs whith exactly one number in the other set |
+
+The the question become "How to show that set of numbers {..., -2, -1, 0, 1, 2, ...} and set of positive whole numbers {1, 2, 3, ...} can be paired up (Eahc number in one set pairs with exactly one number in the other set)?"
+
+It is important to make every concept is clare before process further. The act of walking through each unfamiliar term get you that much closer to becoming confortable with the question.
+
+#+BEGIN_QUOTE
+When you are working on something that is difficult, retreat back to something that you can do and that you feel confident that you can do.
+#+END_QUOTE
+
+Idea does NOT come instantly because all ideas were a struggle (Things alike). People should feel perfectly happy
+with the idea of struggling or getting things wrong and then continue working on them and realizing that is part
+of the success process. It is incredible contribution to ones life.
+
+** TODO Natural Numbers vs. Rational Numbers
+
+Once again, Failure and mistakes are important positve steps toward success.
+
+The challenge for this section is to proof all naturla number and integers have the same cardinality.
+
+Turns out the natural numbers and the rational numbers have the same cardinality.
+
+Quote below is the difference between regular people and experts,
+
+#+BEGIN_QUOTE
+People who find things very easy. It is because it is exactly the experience that he/she has demostrated,
+mainly it is what he/she is familiar with (*Mastered*).
+#+END_QUOTE
+
+** DONE Math Review
+   CLOSED: [2016-11-28 Mon 07:08]
+
+N/A
+
+* TODO Week 4: Dodgeball
+** TODO Dodgeball
+
+#+BEGIN_QUOTE
+One of the the things we must do to appreciate our intellectual life is to be open minded, even open minded about things that seem to be absolutedly incomprehensible.
+#+END_QUOTE
+
+The game of "Dodgeball", the second player (Player Two) can always win.
+
+** TODO Bigger Dodgeball
+
+The bigger dodgeball game use infinity number of rows, however the player two is still going to win.
+
+The 'buy every ticket' strategy did not work for Player 1. We just saw that Player 2 can always produce a row that is not on Player 1's list.
+
+** TODO Infinity Dodgeball
+
+#+BEGIN_QUOTE
+It is impossible to create a one-to-one correspondence between all possible sequences of X's and O's.
+#+END_QUOTE
+
+'Buy Every Ticket' strategy failed because it was unable to make a one-to-one correspondence between the set of all possible sequences of X's and O's and the row numbers (the natural numbers). 
+
+When it is impossible to make a one-to-one correspondence between two sets, we know that that means that the two sets do not have the same cardinality.
+
+Since we saw conclusively that the set of natural numbers (the row numbers) cannot be put into 1-1 correspondence with the set of all possible sequences of X's and O's, we are forced to conclude that infinity comes in different sizes
+
+#+BEGIN_QUOTE
+Infinity itself comes in different sizes.
+#+END_QUOTE
+
+We can experience unexpected insights that we had never seen before by staing open-minded in the daily life.
+
+#+BEGIN_SRC 
+1--0.6????...
+
+2--0.?5???...
+
+3--0.??8??...
+
+4--0.???6??...
+
+...
+#+END_SRC
+
+Above snippet shows that the decimal numbers between =0= and =1= has a different cardinality (There is NO one-to-one correspondence) that natural numbers from 1 to infinity.
+
+#+BEGIN_QUOTE
+Old ideas are the richest source for creating new ideas. Rather than creating a whole other proof.
+#+END_QUOTE
+
+Turns out there are inifinitely many different sizes of infinity.
+
+** DONE Math Review
+   CLOSED: [2016-11-29 Tue 07:00]
+
+N/A
+
+* TODO Week 5: Euler Circuit
+** TODO Euler Circuit
+
+If you choose any two people, call them A and Z, then you can find a person B who has been in the same room with A, and a person C who has been in the same room as B, and a person D who has been in the same room as C, and and a person E who has been in the same room as D, and a person F who has been in the same room as Z. The theory says you could connect any two people with a chain of 6 or fewer contacts.
+
+#+DOWNLOADED: https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/291c4bb882fcbb2323626123f2abbb48/asset-v1:UTAustinX+UT.9.10x+3T2016+type@asset+block/Koenigsberg_Simplified__1_.png @ 2016-11-29 07:09:13
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/8874269f26b337ea909099eeb748deef6541fc5b.png]]
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-29 at 7.11.38 AM.png @ 2016-11-29 07:11:55
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/512bc752cfdf4972ad77dbe34acb08ce6df10e98.png]]
+
+The image above is called a *Graph*.
+
+The Six Degrees of Separation is a concept that says every person on earth is connected by six or fewer contacts. 
+
+Degree, the degree of a vertex is the number of edge ends that connect to that vertex. (B in image above have five degrees)
+
+A graph has a Euler circuit means that you can trace the whole graph starting at a vertex, going over each edge exactly once and returning to where you started.
+
+The ONLY place you can get stuck is where you start becuase that is the only which is odd (=even - 1 = odd=).
+
+#+DOWNLOADED: https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/c965da74985c4d02e9b09abad40ce33e/asset-v1:UTAustinX+UT.9.10x+3T2016+type@asset+block/Even_degree.PNG @ 2016-11-29 08:04:09
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/b62b868eec6bf7eba3f16c3c8ecfd5caeaff6afa.png]]
+
+#+BEGIN_QUOTE
+Try something met with partial success and them improved it and then met with even better success and improved it and improved it and finally led to success.
+#+END_QUOTE
+** DONE Math Review
+   CLOSED: [2016-11-29 Tue 08:17]
+
+N/A
+
+* TODO Week 5: Course Conclusion
+** TODO Course Conclusion
+
+#+BEGIN_QUOTE
+One of the most powerful realities is that each of us can choose to become a different and better human being by taking intentional action.
+#+END_QUOTE
+
+* TODO Core Concepts
+
+The following text is copy-paste from the course page (It may not available when you see this).
+
+https://courses.edx.org/courses/course-v1:UTAustinX+UT.9.10x+3T2016/courseware/ed583801f1e048b1a5eb5ac21bff383d/16d6d8dbabc344979e1fe4f5946abdf3/
+
+*Understand Deeply*
+
+Don't face complex issues head-on; first understand simple ideas deeply. Clear the clutter and expose what is really important. Be brutally honest about what you know and don't know. Then see what's missing, identify the gaps, and fill them in. Let go of bias, prejudice, and preconceived notion. There are degrees to understanding (it's not just a yes-or-no proposition) and you can always heighten yours. Rock-solid understanding is the foundation for success.
+
+*Make Mistakes*
+
+Fail to succeed. Intentionally get it wrong to inevitably get it even more right. Mistakes are great teachers - they highlight unforeseen opportunities and holes in your understanding. They also show you which way to turn next, and they ignite your imagination.
+
+*Raise Questions*
+
+Constantly create questions to clarify and extend your understanding. What's the real question? Working on the wrong questions can waste a lifetime. Ideas are in the air - the right questions will bring them out and help you see connections that otherwise would have been invisible.
+
+
+*Follow the Flow of Idea*
+
+Look back to see where ideas came from and then look ahead to discover where those ideas may lead. A new idea is a beginning, not an end. Ideas are rare - milk them. Following the consequences of small ideas can result in big payoffs.
+
+*The Quintessential Element*
+
+The unchanging element is change - by mastering the first four elements, you can change the way you think and learn. You can always improve, grow, and extract more out of your education, yourself, and the way you live your life. Change is the universal constant that allows you to get the most out of living and learning.

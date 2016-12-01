@@ -1,0 +1,728 @@
+# -*- mode: Org; org-download-image-dir: "./imgs/"; -*-
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"/>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/languages/lisp.min.js"></script>
+#+HTML_HEAD: <script>hljs.initHighlightingOnLoad();</script>
+#+HTML_HEAD: <script src="../assets/js/hl_toc.js"></script>
+#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1">
+
+#+AUTHOR: Li Xinyang
+#+CREATOR: Li Xinyang
+#+TITLE: Learning How to Learn
+#+EMAIL: mail@li-xinyang.com
+
+* DONE Week 01
+  CLOSED: [2016-11-12 Sat 18:38]
+
+This module discovers modes of thinking and how to use these modes to improve learning, introduces tool for overcome procrastination (拖延症) and discovers the facts about memory and sleeping.
+
+** DONE Focused versus Diffuse Thinking
+   CLOSED: [2016-11-14 Mon 11:20]
+*** DONE Introduction to the Focused and Diffuse Modes
+    CLOSED: [2016-11-14 Mon 11:20]
+Human has two modes of thinking, /focused/ and /diffuse/ modes.
+
+The *Focus Mode* is the type of intense concentration people need to work through a problem, step by step. 
+
+The *Diffuse Mode* of thinking is used to learn new idea, it could be thought of as a flashlight set so that it casts its light very broadly, but not very strong in any one area.
+
+#+BEGIN_QUOTE
+   You must also plant the seed for your diffuse mode by first doing focused mode work.
+#+END_QUOTE
+
+The travel distance is the key to differentiate two mode of thinking.
+
+Human can only think in *one* mode at a time.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Week 01.qvnote/resources/9DBCC2FFE1EFCFC1F9A6171FBCF43E67.png @ 2016-11-11 07:50:41
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/14be64ae3f35ef6516056af66a666a57fdca78a6.png]]
+
+Use the analogy of the game of pinball, diffuse mode of thinking is like widely spaced rubber bumpers and focused model of thinking is like closed placed rubber bumpers.
+
+#+BEGIN_QUOTE
+The diffuse mode could be thought of as a flashlight set so that it casts its light very broadly, but not very strongly in one area. (As opposed to the focused mode, which would have its light cast very strongly in a single area, but very weakly everywhere else.)
+#+END_QUOTE
+
+*** DONE Terrence Sejnowski and Barbara Oakley: Introduction to the Course Structure
+    CLOSED: [2016-11-14 Mon 11:20]
+
+The course is help student reframe how to thing about learning and to help reduce frustration and increase understanding. Student is not required to have any in-depth background in particular subject, but students are expected to take the ideas and apply them to whatever subject the student is trying to learn and improve in.
+
+It is important to learn "how to learn" because it is easy to fool yourself about whether you actually know the material. The course teach new ways to hold your focus and embed the material in mind. The course also covers tips to overcome procrastination with less frustration.
+
+*** DONE Welcome to Learning How to Learn!
+    CLOSED: [2016-11-14 Mon 11:20]
+
+This section covers course objectives, FAQs, forums usage, grade calcuations, recommand readings, etc.
+
+Reading list can be found at [[https://www.coursera.org/learn/learning-how-to-learn/resources/BbyV4][here]].
+
+*** DONE Using the Focused and Diffuse Modes
+    CLOSED: [2016-11-14 Mon 11:25]
+
+How to switch between focused mode and diffused mode (Use by "famous people")?
+
+Traditional techniques to connect between two mode of thinking is to wake up just before falling asleep. Let the mind changing between two modes can help learning effectively.
+
+Switching between the focused and diffuse modes helps people to learn hard things and learning difficult thing takes time. It is like doing excise, do little bit every day.
+
+Metaphors provide power techniques for learning.
+
+*** DONE What is Learning
+    CLOSED: [2016-11-14 Mon 11:26]
+
+The brain is complex. There are a million billion synapses in the bran. Many new synapses (conections) are formed on the dendrites when you learn new things.
+
+ #+BEGIN_QUOTE
+   We know that brain connectivity is dynamic and remains so even after it matures. You are not the same person you were after a night's sleep or even a nap.
+ #+END_QUOTE
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Week 01.qvnote/resources/DC046E786324D81D7F1A099A246F5309.png @ 2016-11-11 07:55:02
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/174058ee5003f4b8a8a4ed7399387b45c76f2a06.png]]
+
+** DONE Procrastination, Memory, and Sleep
+   CLOSED: [2016-11-15 Tue 10:18]
+*** DONE A Procrastination Preview
+    CLOSED: [2016-11-15 Tue 09:41]
+ Procrastination is a way of brain to avoid the pain by switching attention to something else,
+
+ 1. Unhappy feeling
+ 2. Funnel attention onto a more pleasant task
+ 3. Fell happy temporarily
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Week 01.qvnote/resources/5E30DD64509BE637982468284F47966F.png @ 2016-11-11 07:55:25
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/2a51fb217bb2d478cb94ba9fc7f0dbd4f5034b7c.png]]
+
+ #+BEGIN_QUOTE
+   Researchers discovered that not long after people might start actually working out what they didn't like, that neurodiscomfort disappeared.
+ #+END_QUOTE
+
+ Pomodoro is a great tool/technique to fix procrastination, usually it is a period of time (25 minutes) uninterrupted focused time with reward at end of each period.
+
+*** DONE Practice Makes Permanent
+    CLOSED: [2016-11-15 Tue 10:02]
+
+ It is important to practice with ideas and concepts when learning math and science to help enhance and strength the neural connection during the learning process because these concepts are abstract.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Week 01.qvnote/resources/792DB923004EEC42D1400C12EF72D703.png @ 2016-11-11 07:55:57
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/99d1729933ede6384b923ba877a1b0e00e2c7010.png]]
+
+ Once again, it is better to do a little at a time rather than do everything at once, so that your neural mortar in some sense has a chance to dry.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Week 01.qvnote/resources/02F2ADFE6AC895161578D3E2209DADE5.png @ 2016-11-11 07:56:22
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/f22279a88e6a3f0819c2c66444b1e2b3e65eb775.png]]
+
+ In other words, it is possible to change and become accomplished in areas that you don't think you can do very well at.
+
+*** DONE Introduction to Memory
+    CLOSED: [2016-11-15 Tue 10:04]
+
+ Introducing two major memory in the memory systems, *long-term memory* and *working memory*. These two memory are related. Working memory has four (4) chunks.
+
+*Focus mode* is associated with the concentrating abilities of the brains' prefrontal cortex.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Week 01.qvnote/resources/131591AA3A98D35116B6AD61C587BFCD.png @ 2016-11-11 07:57:28
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/ff5e827a1c3f15b5315161a430719ad8be5b27a6.png]]
+
+ Short-term memory is like inefficient blackboard (Not very good one) but longterm memory is like warehouse distributed in a big/wide area. It is important because it is the place where fundamental concepts and techniques are stored.
+
+ Moving things from working memory to longterm memory takes time and practice.
+
+*** DONE The Importance of Sleep in Learning
+    CLOSED: [2016-11-15 Tue 10:16]
+
+The space between brain cells increase when you sleep because it shrink during sleeping. Fluid flow past cells and wach the toxins (Metabolic toxins) out.
+
+That is why sleeping is a good way to keep brain clean and healthy and it is an important part of learning.
+
+During sleep, brain erases the less important parts of memories and strengthens areas that you need/want to remember.
+
+#+BEGIN_QUOTE
+  Dreaming about what you're studying can substantially enhance your ability to understand.
+#+END_QUOTE
+
+*** DONE Interview with Dr. Terrence Sejnowski
+    CLOSED: [2016-11-15 Tue 10:16]
+
+Key points get from Dr. Terrence are listed below.
+
+Learning by doing and learning from the experts. Multi-task is not doing two things at the same time but quick context switching ability.
+
+Asking question (Interaction) and discussion is interesting when the topic is dry. You can learn more by active engagement rather than
+passive listening.
+
+Muti-task is not possible but it is a key skill (Key to accomplishing a lot task/thing) to quick switch between contexts (Different tasks).
+
+#+BEGIN_QUOTE
+  A lot of success in life is that passion and persistence, of really staying the course, staying working on it, and ,not letting go. Not giving up.
+#+END_QUOTE
+
+** DONE Summary
+   CLOSED: [2016-11-15 Tue 10:17]
+*** DONE Summary video for Module 1
+    CLOSED: [2016-11-15 Tue 10:16]
+This week introduced two mode of thinking (Many modes), *focused* (Helps to keep concentrated) and *diffuse* (Learning new things).
+
+"Smart" people can access the diffuse model more easily. 
+
+The easiest way to overcome procrastination is to use Pomodoro technique. 
+
+Practice can move working memory into long term memory.
+
+Sleep and exerice make learning more effectively.
+
+*** DONE Excitement About What's Next! MaryAnne Nestor Gives Special Hints
+    CLOSED: [2016-11-15 Tue 10:17]
+
+Do NOT give up.
+
+** DONE Optional Further 
+   CLOSED: [2016-11-15 Tue 10:18]
+*** DONE Reading: Focused versus Diffuse Thinking
+    CLOSED: [2016-11-15 Tue 10:18]
+**** DONE Notes on Note-Taking
+     CLOSED: [2016-11-15 Tue 10:18]
+Review of research highlights for students and instructors from Harvard Initiative for Learning and Teaching. (Instructor part of note-taking skill is ignored for now)
+
+http://hilt.harvard.edu/files/hilt/files/notetaking_0.pdf
+
+Notes are key tool for learning. Good skill makes learning process more efficient (advancing learning, memory, long-term retention of content).
+
+Tips for note-taking,
+
+1. Take generative notes (Use your own words)
+2. Review early and often
+3. Test yourself (Flashcard/Cornell Notes)
+4. +Carefully consider how you want to take notes+ (Pen/Laptop)
+5. Be careful of misperceptions during learning (Avoid the misperception that you know lecture content better than you actually do which leads to poor study habits. Be aware you will forget learned things and adopt study habits to address the gaps in knowledge)
+
+Production and review notes is part of learning process which making connection between idea unit and course content. It also helps solving problems and making decisions. It is not benefit to all for example clinical counseling).
+
+Keep the focus on learning first. Otherwise, taking a class become a transcription event instead of a *learning event*. It is hard to find the balance between production and learning. To solve the issue, one way is to write note in stenography/shorthand.
+
+Note quality is hard to assess because it is self-produced records. However, researcher use number of idea units, key lecture points to assess the quality. (Some researcher argued that the highest quality/most effective notes are those that can be understood by someone unfamiliar with notes content)
+
+*Optimal method of note-taking* is a to using a framework/organization and generative activities (Self testing) to facilitate the connections between ideas and making multiple times reviews.
+
+Two note-taking styles, *linear* and *non-linear*. Cornell Notes format splits a note into different sections. Left side for the formal note, right side for the question, and bottom is the summary of the page. Cornell formats helps connect ideas, synthesize information and better apply knowledge to novel context.
+
+#+BEGIN_QUOTE
+Managing working memory is an essential component for effective note-taking.
+#+END_QUOTE
+
+*Optimal method for notes reviewing*, note reviewing is the largest benefits from note-taking. Self-testing using either flashcard or Cornell methods. Do it early and often is also another good habit to have.
+
+*** DONE A Post About Anxiety, Depression and PTSD from a Learner in Learning How to Learn
+    CLOSED: [2016-11-15 Tue 10:17]
+     
+A student talks about the usefulness of the course.
+
+** DONE Optional Interviews
+   CLOSED: [2016-11-15 Tue 10:18]
+N/A
+* DONE Week 02
+  CLOSED: [2016-11-12 Sat 18:38]
+
+Chunks, easily accessible information compact packages in the brain. This module teach how to form *chunk* and use it to enhance understanding/creativity. This module also covers illusions of competence in learning, the challenges of overlearning, and the advantages of interleaving.
+
+** DONE Checking - The Essentials
+   CLOSED: [2016-11-15 Tue 10:28]
+*** DONE Introduction to Chunking
+    CLOSED: [2016-11-15 Tue 10:23]
+Introducing chunk, a compact package in our brain. How to create it and use it well. This module also covers the illusions of competence in learning, overleaning and interleaving.
+*** DONE What is Chunk?
+    CLOSED: [2016-11-15 Tue 10:23]
+What is chunk?
+
+#+BEGIN_QUOTE
+Chunks are pieces of information, through bound together through meaning of use. A network of neurons that are used to firing together.
+#+END_QUOTE
+
+Brand new concepts can make less sense, but chunk make these small pieces of information more meaningful. Chunk helps to connect pieces through meaning and provides a big picture. (The logical whole, many connected chunks) Single piece of information without context does not provide much values.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-11 at 10.56.06 PM.png @ 2016-11-11 22:56:15
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/7f6678ecbe98d1aec98a6e18f015fc6e59dac1ff.png]]
+
+Working memory can access other parts of brain when in focused mode. It is part of learning process. However, the brain work less efficient when under stress.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-11 at 10.59.18 PM.png @ 2016-11-11 22:59:34
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/8c1c1c1d3c5c21d2addf62c3546173bc21aaf432.png]]
+
+Create conceptual chunks is the first step to learning anything, which unite scattered bits of information through meaning.
+
+The concept of chunk can be apply to many fields, focus and practice helps to create chunks which helps brain run more efficiently. Any expertise is built little by little. The underlying details become passive when you master all the related chunks.
+
+*** DONE How to Form a Chunk - Part 1
+    CLOSED: [2016-11-15 Tue 10:24]
+
+Form a chunk is about to find the pattern and to build larger chunk based on the mini chunk. (Like languages is learned bit by bit)
+
+#+BEGIN_QUOTE
+The best chunks are the ones that are so well ingrained, that you don't even have to consciously think about connecting the neural pattern together.
+#+END_QUOTE
+
+Learning things with workout example is easy, but make sure you are not only putting the focus on the purpose of each step but also the connection between each step (Why each step is there).
+
+#+BEGIN_QUOTE
+It's more like using a road map to help you when traveling to a new place. Pay attention to what's going on around you when you're using the map, and soon you'll find yourself about to get there on your own. You'll even be able to figure out new ways of getting there.
+#+END_QUOTE
+
+*** DONE How to Form a Chunk - Part 2
+    CLOSED: [2016-11-15 Tue 10:26]
+
+strategy of forming chunk for different fields are different. The steps are,
+
+1. Focus on chunking new material
+2. Understand the chunking ideas (Like glue links other chunks)
+3. Practice (Gaining context, knows how and when to use the chunk)
+
+Test on formed chunk (Only DIY can master the chunk). 
+
+Easily accessible chunks can be built by practice and reputation (Bottom up learning approach). Another approach is top down learning (A big picture approach), for example, skim through the content you are about to learn.
+
+Context is where top down and bottom up meet, so you know when to use chunks.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-12 at 5.04.34 PM.png @ 2016-11-12 17:04:45
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/12b748da654b5d19316e9127176b41568e60ec7d.png]]
+
+*** DONE Illusions of Competence
+    CLOSED: [2016-11-15 Tue 10:27]
+
+This section covers /recall/, /illusions of competence/, /mini-testing/, and /value of making mistakes/.
+
+Base on research, rereading is much less productive than recall. You can learn more deeper by practicing and recalling. In other word, passive learning is the last learning option you want to choose. Recalling covert working memory into hyper link which connect to other chunks in other part of the brain.
+
+Different surrounding can also enhance learning while recalling.
+
+Illusion of competence is like looking at the problem solution and think you have known how to solve the problem. (Highlighting should be done carefully!) Synthesize key ideas/concepts are very good idea.
+
+Self testing and recall can ensure you have master the material. Mistake can helps to learn better. 
+
+*** DONE Practice Quiz
+    CLOSED: [2016-11-15 Tue 10:28]
+
+N/a
+
+** Seeing the Bigger Picture
+*** TODO What Motivates You?
+
+This sections covers how brain works related to motivation. Learning can be easy when you passionate about it (or certain fields). 
+
+What really motivates your is some kind of stuff.
+
+#+BEGIN_QUOTE
+Dopamine is in the business of predicting future rewards and not just the immediate reward. 
+
+This can motivate you to do something that may not be rewarding right now but will lead to a much better reward in the future. 
+#+END_QUOTE
+
+This sections discussed three (3) neuromodulators,
+
+- acetylcholine, affects focused learning and attention
+- dopamine, predict future rewards and not the immediate reward
+- serotonin, affect risk taking behavior
+
+*** DONE The Value of a Library of Chunks
+    CLOSED: [2016-11-15 Tue 10:30]
+
+The bigger and well practiced the chunk of mental library the likely to become an expertise in certain area (Regardless the fields).
+
+Chunks in one field can *transfer* to chunks in other fields. The problem can be quickly solved if you have a well built library of chunks. Building chunk is a way to training the brain to find patterns.
+
+Two way to solve problem,
+
+- Sequential, involve focused mode
+- Holistic Intuition, involve creative diffused mode linking to focused mode throughts (May not always correct)
+
+Law of Serendipity,
+
+#+BEGIN_QUOTE
+Lady luck favors the one who tries.
+#+END_QUOTE
+
+Just focus the current section/unit you are trying to learn without worry to much about other related concepts/material which makes your next learning step easier to process.
+
+*** DONE Overlearning, Choking, Einstellung, and Interleaving
+    CLOSED: [2016-11-15 Tue 10:31]
+
+You may tend to practice one thing repetitively when you learn new thing. It is called overleaning. It does benefit to some area but not all. For other fields, it just waste of learning time.
+
+*Deliberate practice* is to intentionally focus on things that you are not mastered yet.
+
+*Einstellung* (German word, /minset/), a great built chunk may prevent you to find the solution in focused mode.
+
+Related information helps to solve your facing issue, research before starting solving issue.
+
+*Interleaving*, practicing jumping back and forth between problems/situation that require different techniques or strategies. (Mix up the learning process and train the brain not only how to solve a problem but when to use certain technique, kind like shuffle the cards) It builds and enhance creativity and flexibility.
+
+This section compares two kind of people, expertise in one field and expertise in multiple fields. First group create new things but second group knows the field better/deeper.
+
+*** DONE Summary
+    CLOSED: [2016-11-15 Tue 10:32]
+    
+Chunks related information bound via usage and meaning. Big chunk can build upon small chunk. It can be built through focus, understanding, and practice. Recall in different physical place is the good way to enhance the chunk. Transfer helps to use chunk in other fields.
+
+This module also covers illusion of competence, deliberate practice, einstellung (mindset, prevent you to be flexible) and /Law of Serendipity/ (Lady luck favors the one who tries).
+
+*** DONE Practice Quiz
+    CLOSED: [2016-11-15 Tue 10:32]
+
+N/A
+
+** DONE Review
+   CLOSED: [2016-11-15 Tue 10:32]
+N/A
+** DONE Optional Further Readings
+   CLOSED: [2016-11-15 Tue 10:32]
+N/A
+** DONE Optional Interviews
+   CLOSED: [2016-11-15 Tue 10:32]
+*** Interview with Scott H. Young
+Link below is his 1 year MIT challenge.
+
+https://www.scotthyoung.com/blog/myprojects/mit-challenge-2/
+* DONE Week 03
+  CLOSED: [2016-11-14 Mon 09:44]
+** DONE Procrastination
+   CLOSED: [2016-11-13 Sun 22:20]
+*** DONE Introduction to Procrastination and Memory
+    CLOSED: [2016-11-15 Tue 10:34]
+
+This module cover procrastination and memory. These two concepts are related because converting working memory to long-term memory takes time and should *NEVER* put until "the last minute".
+
+This module also cover how to overcome with procrastination with the minilist efforts and a way to best access your brain's long-term memory.
+
+*** DONE Tackling Procrastination - It's Easier, and More Valuable, Than You Think
+    CLOSED: [2016-11-15 Tue 10:34]
+
+Understand procrastination can help to prevent it from happening. Inner "Zombie" is used to illustrate your brain falls into as a result of specific cues (To make here and now better).
+
+#+BEGIN_QUOTE
+Good learning is a bit by bit activity. You want to avoid cramming which doesn't build solid neural structures.
+#+END_QUOTE
+
+Willpower uses lot of neural resources and should not be used to against procrastination.
+
+#+BEGIN_QUOTE
+Procrastination can be a single monumentally important keystone bad habit, a habit in other words that influences many important areas of your life.
+#+END_QUOTE
+
+Procrastination always come with "self story telling" (Making excuses for procrastination) and can be extreamly dangerous (Arsenic eaters example, 48th meeting of the German Association of Arts and Science), it harms you bit by bit. It shares common features with addiction.
+
+Next few sections will train you how to master your own habits.
+
+*** DONE Zombies Everywhere
+    CLOSED: [2016-11-15 Tue 10:35]
+
+Chunking related to habit and habit (Zombie mode, you do not need to put all your attention to one thing) is energy saver. There are four(4) parts which consist habit,
+
+1. The cue, the trigger put you into the zombie mode (It can be harmful or helpful)
+2. The routine, your habit (Zombie mode)
+3. The reward, habit continues because of reward/pleasant
+4. The belief, your underline belief
+
+*** DONE Surf's Up: Process Versus Product
+    CLOSED: [2016-11-15 Tue 10:37]
+
+Mental tools/tricks can make learning process effectively. 
+
+The first trick is to focus on the *process* instead of *product*. Usually the product is the trigger that cause the procrastination.
+
+The key point is to put your best effort in a period of time (Process), but not on the outcome (Production).
+
+Distribution sometime can be hard to avoid but it is nice to avoid it and train yourself so that you can switch the mental context quickly.
+
+*** DONE Harnessing Your Zombies to Help You
+    CLOSED: [2016-11-15 Tue 10:40]
+
+This sections is about harnessing zombie powers of habit to help avoiding procrastination with minimalist use of willpower.
+
+The only place should apply willpower is the change the *cue* (Mentioned in the previous section).
+
+(1) The *cue* falls into four (4) categories,
+
+- Location
+- Time
+- How you feel
+- Reactions
+
+(2) The *routine*, the key to rewire habit (Change habit) is /plan/.
+
+(3) The *reward*, this require some investigation on why you are procrastination and substitute an emotional payoff.
+
+#+BEGIN_QUOTE
+The better you good at something, the more enjoyable it can become.
+#+END_QUOTE
+
+(4) The *belief*, habit is the belief that you can do it.
+
+*** DONE Juggling Life and Learning
+    CLOSED: [2016-11-15 Tue 10:41]
+
+List down all the pending tasks to free space in working memory for problem solving. It is also good to list the task before sleep and your brain can help you to figure out how to solve them in background.
+
+Habit of Listing tasks also helps to help you estimate how long you need for certain kind of tasks. The single task should be manageable (Not too big/small). Planing start/end time is also major part of listing tasks technique.
+
+#+BEGIN_QUOTE
+Eat your frogs first in the morning. Try to work on the most important and most disliked task first.
+#+END_QUOTE
+
+*** DONE Summing Up Procrastination
+    CLOSED: [2016-11-15 Tue 10:41]
+
+Learning involves bit by bit building of solid neural scaffolds. To sum up,
+
+- Keep a planner journal, check your progress constantly
+- Commit yourself to certain routines and tasks each day, write your daily plan/tasks and review before sleep
+- Delay rewards until you finish the task
+- Watch for procrastination cues
+- Gain trust in your new system (Tasks/Planning system)
+- Have backup plans for when you still procrastinate
+- Eat your frogs first
+
+*** DONE Practice Quiz
+    CLOSED: [2016-11-14 Mon 09:32]
+N/A
+
+** DONE Memory
+   CLOSED: [2016-11-13 Sun 22:20]
+*** DONE Diving Deeper into Memory
+    CLOSED: [2016-11-15 Tue 10:43]
+    
+Memory is not only part of developing expertise but a very *important* part. Human-being has outstanding visual and spatial memory systems to help building /long-term memory/. The special visual memory system is good at "Where the things are?" and "How do they look?". 
+
+To convert working memory to long-term memory, there are few criterias. The idea should be /memorable/, it must be repeated. Handwriting also helps make things memorable by deeply encode the idea into neural memory structure.
+
+#+BEGIN_QUOTE
+People often underestimate the benefits of spaced repetition when learning.
+#+END_QUOTE
+
+*** DONE What is Long Term Memory
+    CLOSED: [2016-11-15 Tue 10:43]
+    
+There are multiple memory system for different types of learning. Memory is not fixed, but change all the time. It can be strenged/recalled (Reconsolidation). Consolidation, reconsolidation occurs during sleep. This explain why spaced learning works.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-13 at 8.35.46 PM.png @ 2016-11-13 20:36:06
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/d05983641b6b534ea4e1533d00feec3c071c7009.png]]
+
+Astrocytes are brain cells that provide nutrients to neurons, maintain extracellular (outside the cell) ion balance, involved in repair after injury and have a role in learning.
+
+Damage to the hippocampus and its input leads to inability to store new long-term memories.
+
+*** DONE Creating Meaningful Groups and the Memory Palace Technique
+    CLOSED: [2016-11-15 Tue 10:44]
+    
+Other trick is to create meaningful group to simplify the materials. Grouping numbers, concepts or things into the thing your familiar with. You can find memory tricks online or come up with your own.
+
+Memory palace is a powerful way of grouping things you want to remember (Building relation between place/location/position with the item you want to remember). It allows you to tap into your visual and spatial memory ability. It is often used to remember unrelated items. The first time of using this technique can be hard, but it has been proofed its effectiveness.
+
+*** DONE Summing Up Memory
+    CLOSED: [2016-11-15 Tue 10:44]
+
+This course covers two memory system, *long-term memory* (Storage like memory, conversion need practice and repeat bit by bit) and *working memory* (Poor blackboard only have four slots)
+
+Human-being has outstanding visual memory system, it works even better with smell and sounds (Use many different senses).
+
+Creating meaningful group can simplify the material you want to memorise.
+
+Memory palace techniques place memorable images in a scene that is familiar to you which allows you to dip into the strength of your visual memory system.
+
+Truly understand the things you need remember can reinforce your mental library and hence become a master of the material.
+
+*** DONE Practice Quiz
+    CLOSED: [2016-11-14 Mon 09:33]
+N/A
+
+** DONE Review
+   CLOSED: [2016-11-14 Mon 09:44]
+N/A
+** DONE Optional Further Readings
+   CLOSED: [2016-11-15 Tue 10:44]
+** DONE Optional Interviews
+   CLOSED: [2016-11-15 Tue 10:44]
+* DONE Week 04
+  CLOSED: [2016-11-17 Thu 14:40]
+** DONE Renaissance Learning and Unlocking Your Potential I
+   CLOSED: [2016-11-17 Thu 14:40]
+*** DONE How to Become a Better Learner
+    CLOSED: [2016-11-17 Thu 14:40]
+
+Two tips to become a better learner,
+
+1. Physical exercise, which helps new neurons survive
+2. Practice makes perfect, which only works when your brain is prepared
+
+*** DONE Introduction to Renaissance Learning and Unblocking Your Potential
+    CLOSED: [2016-11-17 Thu 14:40]
+
+This module is about,
+
+- Learning using metaphor and analogy
+- Work profitably with teammates
+- Perform well on tests
+
+*** DONE Create a Lively Visual Metaphor or Analogy
+    CLOSED: [2016-11-17 Thu 14:40]
+
+#+BEGIN_QUOTE
+A metaphor is just a way of realizing that one thing is somehow similar to another.
+#+END_QUOTE
+
+A visual metaphor/analogy for concepts is great for remembering and understanding concepts.
+
+Metaphors and models are important in giving a physical understanding of the central idea behind the process/concept you are trying to understand. It is also helpful for getting you out of Einstellung what is being blocked by thinking about a problem in the wrong way.
+
+Metaphor helps glue an idea in mind, they make a connection to neural structures that are already there.
+
+#+BEGIN_QUOTE
+It is also helpful to pretend you are the concept you are trying to understand.
+#+END_QUOTE
+
+*** DONE No Need for Genius Envy
+    CLOSED: [2016-11-17 Thu 14:40]
+
+People learn by trying to make sense out of the information they perceive. People rarely learn anything complex simply by having someone else tell it to them.
+
+Having smaller working memory means a person can generalize his/her learning into new, more creative combinations.
+
+Deliberate practice can lift the average brains into the realm of those with natural gifts. (It practice certain mental patterns that deepen and enlarge in your mind)
+
+Imposter Syndrome is about getting a good grade on a test buy being convinced that it was luck and that you are sure to fail the next test and be exposed as fraud. It also involves frequent feelings of inadequacy.
+
+*** DONE Change Your Thoughts, Change Your Life
+    CLOSED: [2016-11-17 Thu 14:40]
+
+People can enhance the development of their neuronal circuits by practicing thoughts that use these neural development which means we can make change to the brain by changing how we think.
+
+#+BEGIN_QUOTE
+Brilliant people can do exceptional work, just like anyone else they can also be careless and biased.
+#+END_QUOTE
+
+The key to success is perseverance (Virtue of the less brilliant).
+
+Approaching materials with a goal of learning it on your own can give you a unique path to mastery. The most important thing a learner can do is to take responsibility of his/her own learning.
+
+*** DONE Practice Quiz
+    CLOSED: [2016-11-16 Wed 06:52]
+N/A
+
+** DONE Renaissance Learning and Unlocking Your Potential II
+   CLOSED: [2016-11-17 Thu 14:40]
+*** DONE The value of Teamwork
+    CLOSED: [2016-11-17 Thu 14:40]
+
+The right hemisphere helps people step back and put the work into big picture perspective. 
+
+#+BEGIN_QUOTE
+The first principle is that you must not fool yourself and you are the easiest person to fool.
+#+END_QUOTE
+
+One good way to catch your blind spots and errors is to brainstorm and work with others who also smartly focused on the topic. (This is reason why other people can see your error but you cannot)
+
+*** DONE A Test Checklist
+    CLOSED: [2016-11-17 Thu 14:40]
+
+Test it a powerful learning experience. Testing has a way to concentrating the mind.
+
+Below is a checklist for prepare a test,
+
+- Did you make a serious effort to understand the text? (Hunting for workout examples doesn't count)
+- Did you check your solutions with others?
+- Did you attempt to outline every homework problem solution?
+- Did you participate actively in homework group discussions?
+- Did you consult with the instructor when you having trouble to understand?
+- Did you understand all of your homework solutions?
+- Did you ask in class for explanation of homework problem solutions that weren't clear to you?
+- Did you carefully go through a study guide if have one?
+- Did you attempt to outline lots of problem solutions quick? (Without spending time on algebra and calculation)
+- Did you go over the study guide and problems with classmates and quiz one another?
+- Did you attend and ask question in a review session?
+- Did you get reasonable night's sleep? (Most important one)
+
+*** DONE Hard Start - Jump to Easy
+    CLOSED: [2016-11-17 Thu 14:40]
+
+Start from the hard question first and quickly jump to the easy ones just after you get stacked, which make more efficient use of your brain by allowing different parts of the brain to work simultaneously on different thoughts.
+
+Pull yourself out when you get stacked and shift to easy question is just chef prepare other foods while waiting.
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-16 at 7.59.34 AM.png @ 2016-11-16 07:59:56
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/a8db85dd94b83c27503ea157809d5b3507ccdac0.png]]
+
+*** DONE Final Helpful Hits for Tests
+    CLOSED: [2016-11-17 Thu 14:40]
+
+The story you tell yourself about why you're stressed make all difference. (Tell yourself you are excited to do your best instead of you are afraid)
+
+#+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-16 at 7.40.52 AM.png @ 2016-11-16 07:41:04
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/6f49cce95d74028a8e2f6c6d5dc24d09988590b9.png]] 
+
+Deep breathing (Breathing using barrel) can counteract the fight/flight response the fuels anxiety.
+
+After complete the test shift your attention and then double check your answers using a big picture perspective and asking yourself "Does this really make sense"?
+
+*** DONE Summary
+    CLOSED: [2016-11-17 Thu 14:40]
+
+This weeks covers metaphors and analogies, change thought can change life, team-work is better, test checklist helps your test and few good tips for tests.
+
+*** DONE Wrapup to the Course by Terrence Sejnowski and Barbara Oakley
+    CLOSED: [2016-11-17 Thu 14:40]
+
+This course helps you to find your own brain manual. The formal education is focused on the *product* of learning not the *process*. This course provide a better sense of the *learning process*.
+
+Best of luck in your life of learning.
+
+*** DONE Practice Quiz
+    CLOSED: [2016-11-17 Thu 14:40]
+N/A
+** DONE Review
+   CLOSED: [2016-11-17 Thu 14:40]
+** Optional Readings
+** Optional Interviews
+** Reading
+
+Farewell message from Dr. Barb Oakley and Dr. Terry Sejnowski and the Team.
+
+* DONE Extra: 10 Rules of Study
+  CLOSED: [2016-11-12 Sat 18:38]
+
+   The rules are excerpted from the book /A Mind for Numbers: How to Excel
+   in Math and Science/.
+   
+   *10 Rules of Good Studying*
+
+1.  Use recall (An ability to recall is one of the key indicators of
+    good learning)
+2.  Test yourself (Using flash card)
+3.  Chunk your problems (Rehearse it after you solve a problem)
+4.  Space your repetition
+5.  Alternate different problem-solving techniques during your practice
+6.  Take breaks
+7.  Use explanatory questioning and simple analogies
+8.  Focus
+9.  Eat your frogs first (Do the hardest thing earlist)
+10. Make a mental contrast (Use a token to remind you what you want to
+    be)
+
+*10 Rules of Bad Studying*
+
+1.  Passive rereading (Waste of time)
+2.  Letting highlightings overwhelm you (Highlighting can fool your
+    mind)
+3.  Merely glancing at a problem's solution and thinking you know how to
+    do it (One of the worst errors)
+4.  Waiting untile the last minute to study
+5.  Repeatedly solving problems of the same type that you already know
+    how to solve
+6.  +Letting study sessions with friends turn into chat sessions+
+7.  Neglecting to read the textbook before you start working problems
+    (Information guides to solution)
+8.  Not checking with instructors or classmates to clear up points of
+    confusion
+9.  Thinking you can learn deeply when you are being constantly
+    distracted
+10. Not getting enough sleep

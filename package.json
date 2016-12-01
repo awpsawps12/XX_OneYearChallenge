@@ -1,0 +1,22 @@
+{
+  "name": "xx_cs_one_year_challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/li-xinyang/XX_OneYearChallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/li-xinyang/XX_OneYearChallenge/issues"
+  },
+  "homepage": "https://github.com/li-xinyang/XX_OneYearChallenge#readme",
+  "devDependencies": {
+    "surge": "^0.18.0"
+  }
+}
