@@ -23,7 +23,7 @@ The detailed syntax guide can be found at link below,
 
 https://courses.edx.org/courses/course-v1:UBCx+SPD1x+2T2016/a24b7341216346f2a5c99c6391f64229/
 
-* TODO Introduction
+* Introduction
 ** TODO Welcome
 
 The thing make program hard to write is the poorly formed problem. There are many issues like,
@@ -81,7 +81,7 @@ N/A
 ** DONE Module Wrap-Up
    CLOSED: [2016-11-29 Tue 21:48]
 N/A
-* TODO 1a: Beginning Student Language
+* 1a: Beginning Student Language
 ** DONE Module Overview
    CLOSED: [2016-11-29 Tue 21:57]
 
@@ -245,8 +245,8 @@ N/A
 Learning how to write code that looks like the design.
 #+END_QUOTE
 
-* TODO 1b: How to Design Functions
-** TODO Module Overview
+* 1b: How to Design Functions
+** Module Overview
 
 The learning goals (Copy-paste from course page),
 
@@ -254,7 +254,7 @@ The learning goals (Copy-paste from course page),
 - Be able to read a complete function design and identify its different elements.
 - Be able to evaluate the different elements for clarity, simplicity and consistency with each other.
 - Be able to evaluate the entire design for how well it solves the given problem.
-** TODO Full Speed HtDF Recipe
+** Full Speed HtDF Recipe
 
 *HtDF Recipe* stands for /How to Design Function Recipe/, which systematizes the function design process. It makes the process clear and guarantee the function quality.
 
@@ -262,7 +262,7 @@ Design recipe makes hard problem easier, but make the easy problem cumbersome.
 
 The HtDF recipe consists of the following steps,
 
-1. Signature, purpose and stub
+(1. Signature, purpose and stub
 2. Define examples, wrap each in check-expect
 3. Template and inventory
 4. Code and function body
@@ -293,7 +293,7 @@ The HtDF recipe consists of the following steps,
   ;; 5) All tests pass
 #+END_SRC
 
-** TODO Slow Motion HtDF Recipe
+** Slow Motion HtDF Recipe
 
 Pay attention to each step in the recipe because every step is intented to help with all the steps after it.
 
@@ -335,16 +335,44 @@ All previous steps help to know how to complete the function body.
 
 Run the tests.
 
-** TODO A Simple Practice Example
-** TODO When Tests are Incorrect
-** TODO Varying Recipe Order
-** TODO Poorly Formed Problems
-** TODO Practice Problems
-** TODO Quiz
-** TODO Module Wrap Up
-* TODO 2: How to Design Data
-* TODO 3a: How to Design Worlds
-* TODO 3b: Compound Data
+** A Simple Practice Example
+
+When function does not work properly, one skill is to scan over the design elements and look for inconsistencies (Often enough to find the bug and make clear what needs to be fixed.).
+
+- Does the purpose match the signature?
+- Does the test match the signature and purpose?
+- Does the stub match what comes before it?
+- Does the function header match the signature and purpose?
+- Does the function body match the signature, purpose and tests?
+
+** When Tests are Incorrect
+
+Below is a repeat of *HtDF* process,
+
+*I. Signature, purpose, stub*
+
+The purpose should be more specific than signature. It descripe what the function does, NOT how the function does certain thing.
+
+*II. Examples (Unit tests)*
+
+- Wrong function definition
+- Wrong test
+- Both are wrong
+
+Above three (3) circumstances can lead test fails 
+
+Examples/tests are writen after /stub/ is to check if the examples are well-formed.
+
+*III. Inventory (Template & constants)*
+
+** Varying Recipe Order
+** Poorly Formed Problems
+** Practice Problems
+** Quiz
+** Module Wrap Up
+* 2: How to Design Data
+* 3a: How to Design Worlds
+* 3b: Compound Data
 * Appendix
 
 Course glossary can be found at link below,
