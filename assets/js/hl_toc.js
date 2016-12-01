@@ -22,5 +22,7 @@ $(document).ready(function() {
     }
 
     appendElapsedDayLabel();
-    $('img').lazyload();
+    $('img').lazyload({
+        effect: 'fadeIn'
+    });
 });
