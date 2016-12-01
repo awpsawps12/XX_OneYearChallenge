@@ -112,6 +112,7 @@ def upload_image(path)
   s3 = amazon_resource(S3_REGION, ENV['AWSAccessKeyId'], ENV['AWSSecretKey'])
   key = generate_key(path)
   obj = s3.bucket(S3_BUCKET).object(key)
+  obj.metadata['Content-Type'] = 'image/png'
   obj.upload_file(path, acl: 'public-read')
   obj.public_url
 end
