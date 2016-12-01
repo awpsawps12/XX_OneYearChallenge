@@ -1,3 +1,7 @@
+$('img').lazyload({
+    effect: 'fadeIn'
+});
+
 $(document).ready(function() {
 
     var DAY_IN_MILLISECONDS  = 1000 * 3600 * 24;
@@ -22,7 +26,4 @@ $(document).ready(function() {
     }
 
     appendElapsedDayLabel();
-    $('img').lazyload({
-        effect: 'fadeIn'
-    });
 });
