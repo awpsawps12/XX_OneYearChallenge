@@ -15,12 +15,14 @@
 #+TITLE: Effective Thinking Through Mathematics
 #+EMAIL: mail@li-xinyang.com
 
-* TODO Course Introduction
+* DONE Course Introduction
+  CLOSED: [2016-12-02 Fri 07:35]
 
 #+DOWNLOADED: .//Users/li-xinyang/Desktop/Screen Shot 2016-11-24 at 6.00.46 PM.png @ 2016-11-24 18:01:19
 [[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/643f037a2b0872e3e0344dd12cb55ed32ff4b490.png]]
 
-** TODO Welcome from Dr. Starbird
+** DONE Welcome from Dr. Starbird
+   CLOSED: [2016-12-02 Fri 07:34]
 
 #+BEGIN_QUOTE
 If you want to really learn, the goal is to change yourself, to become a different person.
@@ -36,9 +38,10 @@ Below are five elements of effective thinking,
 
 The strategy of this course is to /participate/ (Active in thinking for yourself). 
 
-** TODO Introduction to the Team
+** DONE Introduction to the Team
+   CLOSED: [2016-12-02 Fri 07:34]
 
-The first teast of /effective thinking/ is to learn how to produce new idea(s) but learn/get from others or rely on the advise of others. In short try to be a producer of knowledge rather than a consumber of knowledge.
+The first teast of /effective thinking/ is to learn how to produce new idea(s) by learn/get from others or rely on the advise of others. In short try to be a producer of knowledge rather than a consumber of knowledge.
 
 ** DONE Introduce Yourself!
    CLOSED: [2016-11-24 Thu 18:12]
@@ -49,8 +52,10 @@ N/A
    CLOSED: [2016-11-24 Thu 18:13]
 N/A
 
-* TODO Week 1: The Meanie Genie Puzzle
-** TODO A Quick Note
+* DONE Week 1: The Meanie Genie Puzzle
+  CLOSED: [2016-12-02 Fri 07:44]
+** DONE A Quick Note
+   CLOSED: [2016-12-02 Fri 07:39]
 
 Work on an idea with a group is generally better.
 
@@ -62,7 +67,8 @@ If you are honest with yourself about what you actually understand and do NOT un
 
 In short, *ALWAYS BEING HONEST TO YOURSELF AND OTHERS ABOUT WHAT YOU KNOW AND WHAT YOU DO NOT KNOW*, and this will change your life.
 
-** TODO The Puzzle
+** DONE The Puzzle
+   CLOSED: [2016-12-02 Fri 07:39]
 
 Truely understand what the question is (What is really essential) always a great place to start (And important step to do) when solving any kind of challenge.
 
@@ -70,10 +76,11 @@ Truely understand what the question is (What is really essential) always a great
 Unconvering the essence involves specifying what cannot be ignored and identifying and ignoring all of the distracting features that should be ignored.
 #+END_QUOTE
 
-** TODO Working Through the Puzzle
+** DONE Working Through the Puzzle
+   CLOSED: [2016-12-02 Fri 07:41]
 
 #+BEGIN_QUOTE
-Every single creative success ha been built on the ash heap of failed attempts.
+Every single creative success has been built on the ash heap of failed attempts.
 #+END_QUOTE
 
 Willing to make mistakes is one of the most productive strategies to get new idea and move learning forward. Do NOT ignore mistakes but relish (享受) it and learn from it. Never feel bad about making mistake because you are actually making progress.
@@ -82,7 +89,8 @@ Willing to make mistakes is one of the most productive strategies to get new ide
 They (The mistakes) highlight unforseen opportunities and holes in your understanding.
 #+END_QUOTE
 
-** TODO How will this apply to my life? The takeaway
+** DONE How will this apply to my life? The takeaway
+   CLOSED: [2016-12-02 Fri 07:41]
 
 It is always better to systematically list all the possibilities and record the mistakes you have had made. The process of eliminate the bad option is also a way to make progress to find the real solution.
 
@@ -92,8 +100,10 @@ It is often easier to start at the exit and trace backwards to the entrance.
 Change is the universal constant that allows you to get the most out of living and learning.
 #+END_QUOTE
 
-* TODO Week 1: A Shaky Story
-** TODO A Shaky Story
+* DONE Week 1: A Shaky Story
+  CLOSED: [2016-12-02 Fri 07:52]
+** DONE A Shaky Story
+   CLOSED: [2016-12-02 Fri 07:52]
 
 One way to solve a problem is to simplify it (Make it into manageable chunks OR ridiculously simple). When you solved the simplifed version, then you can apply the insights to solve more complex one.
 
@@ -106,23 +116,26 @@ Constantly create questions to clarify and extend your understanding. What's the
 #+END_QUOTE
 
 ** DONE End of Week 1
-   CLOSED: [2016-11-26 Sat 19:20]
+   CLOSED: [2016-12-02 Fri 07:52]
 
 N/A
 
-* TODO Week 2: The Puzzle of the Pirates and the Admirals
-** TODO The Puzzle of the Pirates and the Admirals
+* DONE Week 2: The Puzzle of the Pirates and the Admirals
+  CLOSED: [2016-12-02 Fri 07:58]
+** DONE The Puzzle of the Pirates and the Admirals
+   CLOSED: [2016-12-02 Fri 07:58]
 
 It is a good habit to write/draw something down while solving a problem.
 
-Try something often is a great strate to start.
+Try something often is a great way to start.
 
-** TODO Tips and Strategies
+** DONE Tips and Strategies
+   CLOSED: [2016-12-02 Fri 07:54]
 
 Continue write/draw untile dead end (Do NOT jump steps, which introduce complexity), otherwise it turns to be thingking randomely about possibilities.
 
 #+BEGIN_QUOTE
-One of the reasons people fail to make innovative solutions is that they have in mind some bias that thing is NOT going to work. So they do NOt explore a possibility.
+One of the reasons people fail to make innovative solutions is that they have in mind some bias that thing is NOT going to work. So they do NOT explore a possibility.
 #+END_QUOTE
 
 When you deal with a challenge you many want to try ALL (EVERY SINGLE ONE OF THEM) possibilities. 
@@ -135,7 +148,8 @@ Solve a problem gives you an "insight" which allow you to extend progress even f
 
 The norm (基准) for everything in life (Reality of life) is "under construction" but in "perfect".
 
-** TODO The Solution and Extra Thoughts
+** DONE The Solution and Extra Thoughts
+   CLOSED: [2016-12-02 Fri 07:58]
 
 Strategies of thinking for course "Effective Thinking Through Mathematics",
 
@@ -144,8 +158,10 @@ Strategies of thinking for course "Effective Thinking Through Mathematics",
 - Explore all of the possibilities
 - Draw a picture
 
-* TODO Week 2: Towers of Hanoi
-** TODO Towers of Hanoi
+* DONE Week 2: Towers of Hanoi
+  CLOSED: [2016-12-02 Fri 08:02]
+** DONE Towers of Hanoi
+   CLOSED: [2016-12-02 Fri 08:02]
 
 #+BEGIN_QUOTE
 Enjoy challenges is one of the most important things to be successful in life.
@@ -154,21 +170,26 @@ Enjoy challenges is one of the most important things to be successful in life.
 Playing puzzle fource yourself to become more able to think.
 
 #+BEGIN_QUOTE
-The whole of mathematics and science is merely a refinement of everyday thinking of everyday thinking.
+The whole of mathematics and science is merely a refinement of everyday thinking.
 #+END_QUOTE
 
 Do NOT do a big problem, do a related simple problem (Manageable chunk) and use the "insight" to solve the big problem.
 
 In reality, the expert is actually doing a different task compare to the beginner. (Think of the professional tennis player exaple) An expert understand why every step fits where it is.
 
-* TODO Week 2: Extra Puzzles
-** TODO Extra Puzzles
+* DONE Week 2: Extra Puzzles
+  CLOSED: [2016-12-02 Fri 08:02]
+** DONE Extra Puzzles
+   CLOSED: [2016-12-02 Fri 08:02]
+
+N/A
+
 ** DONE Puzzle Quiz
    CLOSED: [2016-11-26 Sat 22:56]
 N/A
 
-* TODO Week 3: Infinity
-** TODO A Quick Note
+* Week 3: Infinity
+** A Quick Note
    
 Infinity goes beyond what numbers are.
 
@@ -182,7 +203,7 @@ It represent one of the prime stategies for effective thinking, which is to look
 In order to identify and come to grips with the /essentials of a problem/, it is important to determine whether various aspects of the problem are important or not.
 #+END_QUOTE
 
-** TODO Counting Before You Can Count
+** Counting Before You Can Count
 
 Flash one-to-one aligned ping-pong balls in front of you and you can immediately knows the quantity are the same but you may NOT know the exactly quantity for each group.
 
@@ -190,7 +211,7 @@ Flash one-to-one aligned ping-pong balls in front of you and you can immediately
 Two collections whose elements can be paired up into one-to-one correspondence have the same size.
 #+END_QUOTE
 
-** TODO A Barrel of Ping Pong Balls
+** A Barrel of Ping Pong Balls
 
 Think the question "Does the following equation the same? $\infty\ne\infty-1$ OR $\infty = \infty - 1$".
 
@@ -202,7 +223,7 @@ One of the wonderful features about learning new ideas or creating new ideas is 
 
 What is the size of a set in mathematic term? It is known as cardinality of the set.
 
-** TODO The Infinity Inn
+** The Infinity Inn
 
 #+BEGIN_QUOTE
 One of the MOST productive strategies you will ever learn and ever use in your whole life is to take ideas that worked before and use them again.
@@ -210,7 +231,7 @@ One of the MOST productive strategies you will ever learn and ever use in your w
 
 Think about the design pattern example. Use things that you have done before is the best source for creative work.
 
-** TODO How Big Are the Integers?
+** How Big Are the Integers?
 
 #+BEGIN_QUOTE
 One of the most important part of solving a challenging question is to understand what the question is.
@@ -238,7 +259,7 @@ Idea does NOT come instantly because all ideas were a struggle (Things alike). P
 with the idea of struggling or getting things wrong and then continue working on them and realizing that is part
 of the success process. It is incredible contribution to ones life.
 
-** TODO Natural Numbers vs. Rational Numbers
+** Natural Numbers vs. Rational Numbers
 
 Once again, Failure and mistakes are important positve steps toward success.
 
@@ -258,8 +279,8 @@ mainly it is what he/she is familiar with (*Mastered*).
 
 N/A
 
-* TODO Week 4: Dodgeball
-** TODO Dodgeball
+* Week 4: Dodgeball
+** Dodgeball
 
 #+BEGIN_QUOTE
 One of the the things we must do to appreciate our intellectual life is to be open minded, even open minded about things that seem to be absolutedly incomprehensible.
@@ -267,13 +288,13 @@ One of the the things we must do to appreciate our intellectual life is to be op
 
 The game of "Dodgeball", the second player (Player Two) can always win.
 
-** TODO Bigger Dodgeball
+** Bigger Dodgeball
 
 The bigger dodgeball game use infinity number of rows, however the player two is still going to win.
 
 The 'buy every ticket' strategy did not work for Player 1. We just saw that Player 2 can always produce a row that is not on Player 1's list.
 
-** TODO Infinity Dodgeball
+** Infinity Dodgeball
 
 #+BEGIN_QUOTE
 It is impossible to create a one-to-one correspondence between all possible sequences of X's and O's.
@@ -316,8 +337,8 @@ Turns out there are inifinitely many different sizes of infinity.
 
 N/A
 
-* TODO Week 5: Euler Circuit
-** TODO Euler Circuit
+* Week 5: Euler Circuit
+** Euler Circuit
 
 If you choose any two people, call them A and Z, then you can find a person B who has been in the same room with A, and a person C who has been in the same room as B, and a person D who has been in the same room as C, and and a person E who has been in the same room as D, and a person F who has been in the same room as Z. The theory says you could connect any two people with a chain of 6 or fewer contacts.
 
@@ -348,14 +369,14 @@ Try something met with partial success and them improved it and then met with ev
 
 N/A
 
-* TODO Week 5: Course Conclusion
-** TODO Course Conclusion
+* Week 5: Course Conclusion
+** Course Conclusion
 
 #+BEGIN_QUOTE
 One of the most powerful realities is that each of us can choose to become a different and better human being by taking intentional action.
 #+END_QUOTE
 
-* TODO Core Concepts
+* Core Concepts
 
 The following text is copy-paste from the course page (It may not available when you see this).
 

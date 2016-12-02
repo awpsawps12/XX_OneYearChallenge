@@ -24,7 +24,7 @@ The detailed syntax guide can be found at link below,
 https://courses.edx.org/courses/course-v1:UBCx+SPD1x+2T2016/a24b7341216346f2a5c99c6391f64229/
 
 * Introduction
-** TODO Welcome
+** Welcome
 
 The thing make program hard to write is the poorly formed problem. There are many issues like,
 
@@ -55,7 +55,7 @@ N/A
 ** DONE Grading
    CLOSED: [2016-11-29 Tue 21:42]
 N/A
-** TODO Study Tipes
+** Study Tipes
 
 There are 10 suggestions for this course, detailed can be found at link below,
 
@@ -95,7 +95,7 @@ The learning goals for this module (Copy-paste from course material),
 - Be able to use the stepper to automatically step through the evaluation of an expression.
 - Be able to use the Dr Racket help desk to discover new primitives.
 
-** TODO Expressions
+** Expressions
 
 To form an expression,
 
@@ -108,7 +108,7 @@ To form an expression,
 You can be a very good program designer without knowing a lot of math. Programs in graphics or vision or machine learning where you need to know a lot of math that is because you need to understand that domain.
 #+END_QUOTE
 
-** TODO Evaluation
+** Evaluation
 
 A detailed rules should be understand to understand a big program.
 
@@ -119,7 +119,7 @@ Primitive Call Rule, to evaluate a primitive call,
 
 The expression evaluation proceeds from left to right and from inside to outside. 
 
-** TODO Strings and Images
+** Strings and Images
 
 Introduce two primitive values, strings and images.
 
@@ -141,7 +141,7 @@ To form a string,
 
 =overlay= produces images on top of the other.
 
-** TODO Constant Definitions
+** Constant Definitions
 
 To form a constant definition,
 
@@ -158,7 +158,7 @@ Constant definition evaluation rules,
 The notion of defining name constants is going to have a big effect on making our programs comprehensible to other programmers and easy to change in the future.
 #+END_QUOTE
 
-** TODO Function Definitions
+** Function Definitions
 
 Function definition rules,
 
@@ -187,7 +187,7 @@ To evaluate function call,
 - Reduce operands to values
 - Replace function call by body of function in which every occurrence of parameters are replaced by corresponding argument
 
-** TODO Booleans and if Expressions
+** Booleans and if Expressions
 
 True/False program is fundamental for computer.
 
@@ -226,7 +226,7 @@ As soon as an expression produces =true=, other expressions to the right of it a
 
 Stepper is a debug tool in *DrRacker* which evaluate an expression one step at a time.
 
-** TODO Discovering Primitives
+** Discovering Primitives
 
 Two methods are commonly used,
 
