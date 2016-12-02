@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>CS One Year Challenge</title>
+<!-- 2016-12-02 Fri 13:19 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Li Xinyang" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/languages/lisp.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+<script src="./assets/js/hl_toc.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">CS One Year Challenge</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Introduction</a></li>
+<li><a href="#sec-2">2. Progress and Study Note</a></li>
+<li><a href="#sec-3">3. Curriculum</a></li>
+<li><a href="#sec-4">4. Additional Information</a></li>
+</ul>
+</div>
+</div>
+
+<div class="figure">
+<p><img src="https://cs-challenge.s3-ap-southeast-1.amazonaws.com/4281a2523dc3b47813316b0400549a6295a55f05.png" alt="4281a2523dc3b47813316b0400549a6295a55f05.png" />
+</p>
+</div>
+
+<p>
+Snowy mountains illustration Designed by Freepik
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+I am Li Xinyang (<a href="https://github.com/li-xinyang">https://github.com/li-xinyang</a>; <a href="https://twitter.com/lixinyang9">https://twitter.com/lixinyang9</a>), a Front-end Developers who do not have a computer science degree. I am passionate about technology, however, it is not easy for me when I want to proceed further in my career because of lack of fundamental computer science knowledge. I finally decided to take a challenge, completing four years US Computer Science degree equivalent online courses in just one year.
+</p>
+
+<p>
+There are 37 courses in the curriculum. It covers every aspect about computer science. Most of the courses are from Edx and Coursera and I will complete the <b>verified version</b> if the course does have one. The study note will be recorded on a daily basis, and I believe I will gain a lot after complete this challenge.
+</p>
+
+<p>
+The whole challenge takes about 2653 hours to accomplish.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Progress and Study Note</h2>
+<div class="outline-text-2" id="text-2">
+<div class="table-wrapper">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">Index</th>
+<th scope="col" class="left">Study Note</th>
+<th scope="col" class="left">Start</th>
+<th scope="col" class="left">Complete</th>
+<th scope="col" class="right">Cost</th>
+<th scope="col" class="left">Certificate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">0</td>
+<td class="left"><a href="http://challenge.li-xinyang.com/courses/00_learning_how_to_learn/README.html">Learning How to Learn</a></td>
+<td class="left">10/11/2016</td>
+<td class="left">16/11/2016</td>
+<td class="right">49</td>
+<td class="left"><a href="https://coursera.org/verify/EM242TW88NL7">https://coursera.org/verify/EM242TW88NL7</a></td>
+</tr>
+
+<tr>
+<td class="right">1</td>
+<td class="left"><a href="http://challenge.li-xinyang.com/courses/01_cs50_introduction_to_cs/README.html">Introduction to Computer Science - CS50</a></td>
+<td class="left">12/11/2016</td>
+<td class="left">&#xa0;</td>
+<td class="right">90</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="right">2</td>
+<td class="left"><a href="http://challenge.li-xinyang.com/courses/02_effective_thinking_through_mathematics/README.html">Effective Thinking Through Mathematics</a>*</td>
+<td class="left">24/11/2016</td>
+<td class="left">29/11/2016</td>
+<td class="right">49</td>
+<td class="left">Pending</td>
+</tr>
+
+<tr>
+<td class="right">3</td>
+<td class="left"><a href="http://challenge.li-xinyang.com/courses/03_how_to_code_systematic_program_design_p1/README.html">How to Code: Systematic Program Design - Part 1</a></td>
+<td class="left">29/11/2016</td>
+<td class="left">&#xa0;</td>
+<td class="right">49</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>
+Study note with <code>*</code> at the end indicates that course is worth re-taking after a while.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Curriculum</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+The curriculum used for this challenge is provided by Open Source Society. It is a solid path for those who want to complete a Computer Science course on their own time with courses from the best universities in the world. A completed list of curriculum can be found at link below,
+</p>
+
+<p>
+<a href="https://github.com/open-source-society/computer-science">https://github.com/open-source-society/computer-science</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Additional Information</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+<b>Foundations of Mathematics</b>
+</p>
+
+<p>
+I am also honing the basic math skill at Khan Academy during the challenge. The focuses are on Algebra, Calculus and Statistics &amp; Probability, Geometry and Trigonometry maybe later. 
+</p>
+
+<p>
+The progress will be updated periodically (Last updated at 29/11/16 and the link seems only visible to me). 
+</p>
+
+<p>
+<a href="https://www.khanacademy.org/profile/lixinyang/vital-statistics">https://www.khanacademy.org/profile/lixinyang/vital-statistics</a>
+</p>
+
+
+<div class="figure">
+<p><img src="https://cs-challenge.s3-ap-southeast-1.amazonaws.com/702d728d02eb7dfc8dea634a1f5d7d5cf026b5c0.png" alt="702d728d02eb7dfc8dea634a1f5d7d5cf026b5c0.png" />
+</p>
+</div>
+
+<p>
+<b>Anki</b>
+</p>
+
+<p>
+Anki, a flash cards program, is used to supplement the learning process. My learning process for this challenge is,
+</p>
+
+<ol class="org-ol">
+<li>Watch lecture
+</li>
+<li>Take study notes
+</li>
+<li>Convert notes into flashcards
+</li>
+<li>Complete PSET if any
+</li>
+<li>Complete Exam if any
+</li>
+</ol>
+
+<p>
+Anki can be found at link below, 
+</p>
+
+<p>
+<a href="http://www.ankisrs.net/">http://www.ankisrs.net/</a>
+</p>
+
+<p>
+All my cards are highly personalized, hence I will not share them publicly.
+</p>
+
+<p>
+<b>Emacs</b>
+</p>
+
+<p>
+I use Spacemacs (Emacs configuration kit) to compose everything you see here. You can read more about Spacemacs at link below,
+</p>
+
+<p>
+<a href="http://spacemacs.org/">http://spacemacs.org/</a>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Li Xinyang</p>
+<p class="date">Created: 2016-12-02 Fri 13:19</p>
+<p class="creator">Li Xinyang</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

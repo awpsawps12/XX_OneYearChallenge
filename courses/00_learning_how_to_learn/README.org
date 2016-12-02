@@ -1,19 +1,21 @@
 # -*- mode: Org; org-download-image-dir: "./imgs/"; -*-
 
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../assets/css/style.css"/>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"/>
 #+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 #+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
 #+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/languages/lisp.min.js"></script>
 #+HTML_HEAD: <script>hljs.initHighlightingOnLoad();</script>
 #+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
-#+HTML_HEAD: <script src="../assets/js/hl_toc.js"></script>
+#+HTML_HEAD: <script src="../../assets/js/hl_toc.js"></script>
 #+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1">
 
 #+AUTHOR: Li Xinyang
 #+CREATOR: Li Xinyang
 #+TITLE: Learning How to Learn
 #+EMAIL: mail@li-xinyang.com
+
+https://www.coursera.org/learn/learning-how-to-learn
 
 * DONE Week 01
   CLOSED: [2016-11-12 Sat 18:38]

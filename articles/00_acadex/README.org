@@ -1,0 +1,56 @@
+* ACADEX
+
+MIT Center for Academic Excellence
+
+http://web.mit.edu/uaap/learning/index.html
+
+** Time Management
+
+http://web.mit.edu/uaap/learning/time/index.html
+
+How to manage tasks and time.
+
+*** Building a Schedule
+
+#+BEGIN_QUOTE
+Well begun is half done.
+
+Aristotle
+#+END_QUOTE
+
+*** Calendar: Key Dates
+
+*** Balancing Priorities
+
+*** Ways to Save Time
+
+*** Effective Reading and Note-Taking
+
+http://web.mit.edu/uaap/learning/study/reading.html
+
+Reading strategies vary depending on publication types. Strategies below focus on academic materials (Textbooks, academic, articles, presentations, etc.).
+
+The goal of reading and note-taking are *grasping key concepts*. It is NOT necessary to read every word.
+
+*WHAT should you read?* 
+
+- Consult syllabus, concentrate on assigned material
+- Get an overview, read summary and conclusions first for big-picture view (Abstract, introduction and conclusion); Make elaborate notes while read the piece.
+- Make note of section titles, take elaborate note based on chapter/section
+- Test understanding
+
+*WHAT notes should you take based on your reading?*
+
+- Big ideas, main ideas reflected in the introduction/conclusion/abstract/section title
+- Visual cues, different text style, figures/tables/charts/diagrams
+- Repeated things, things mentioned more than once
+
+*HOW should you take notes?*
+
+1. Dating notes and provide a heading describe overall content
+2. Numbering the notes pages
+3. Paraphrasing, writing in own words (Except formulas, definitions, facts)
+4. Using consistent abbreviations and symbols
+5. Developing an ideal organization format (Outline, map, table, note-cards based on material)
+6. Leaving room
+7. Typing the notes, used for revise

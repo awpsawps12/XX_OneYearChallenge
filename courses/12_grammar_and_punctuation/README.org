@@ -1,0 +1,70 @@
+# -*- mode: Org; org-download-image-dir: "./imgs/"; -*-
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../assets/css/style.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css"/>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/languages/lisp.min.js"></script>
+#+HTML_HEAD: <script>hljs.initHighlightingOnLoad();</script>
+#+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js"></script>
+#+HTML_HEAD: <script src="../../assets/js/hl_toc.js"></script>
+#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1">
+
+#+AUTHOR: Li Xinyang
+#+CREATOR: Li Xinyang
+#+TITLE: Grammar and Puncuation
+#+EMAIL: mail@li-xinyang.com
+
+https://www.coursera.org/learn/grammar-punctuation
+
+* Week 1
+
+N/A
+
+* Week 2: Verb Tense Review
+** Learning Objectives
+
+- List the verb tenses of English
+- Identify the verb tenses of English
+- Explain the requirements for using each verb tense
+
+** Verb Tenses
+
+[[https://cs-challenge.s3-ap-southeast-1.amazonaws.com/37d548a119a1a46e9689de62b5b5e8bf947610ce.jpg]]
+
+There are 12 verb tenses (4 groups, each has three in it),
+
+First group is *Simple Tense*,
+
+- Simple present tense
+- Simple past tense
+- Simple future tense
+
+/Simple present tense/ shows something that does OR does not happens regularly. It shows habit, like play tennies is a habit. He does it on a regular basis.
+
+Put an =s= on the verb in simple present tense for singular subjects. No ending for plural subject.
+
+#+BEGIN_QUOTE
+Jerry plays tennies everyday.
+#+END_QUOTE
+
+/Simple past tense/ shows something that happened in the past and finished in the past at a particular time.
+
+Pay attention to the irregular verb in the past tense.
+
+#+BEGIN_QUOTE
+Jerry played tennies yesterday.
+#+END_QUOTE
+
+/Simple future tense/ shows future.
+
+#+BEGIN_QUOTE
+Jerry will play tennis next weekend
+#+END_QUOTE
+
+Second group is *Progressive Tenses** (进行时),
+
+- Present progressive tense
+- Past progressive tense
+- Future progressive tense
+

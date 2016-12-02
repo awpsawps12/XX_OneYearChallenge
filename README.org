@@ -33,10 +33,10 @@ The whole challenge takes about 2653 hours to accomplish.
 #+HTML: <div class="table-wrapper">
 | Index | Study Note                                      | Start      | Complete   | Cost | Certificate                              |
 |-------+-------------------------------------------------+------------+------------+------+------------------------------------------|
-|     0 | [[http://challenge.li-xinyang.com/00_learning_how_to_learn/README.html][Learning How to Learn]]                           | 10/11/2016 | 16/11/2016 |   49 | https://coursera.org/verify/EM242TW88NL7 |
-|     1 | [[http://challenge.li-xinyang.com/01_cs50_introduction_to_cs/README.html][Introduction to Computer Science - CS50]]         | 12/11/2016 |            |   90 |                                          |
-|     2 | [[http://challenge.li-xinyang.com/02_effective_thinking_through_mathematics/README.html][Effective Thinking Through Mathematics]]*         | 24/11/2016 | 29/11/2016 |   49 | Pending                                  |
-|     3 | [[http://challenge.li-xinyang.com/03_how_to_code_systematic_program_design_p1/README.html][How to Code: Systematic Program Design - Part 1]] | 29/11/2016 |            |   49 |                                          |
+|     0 | [[http://challenge.li-xinyang.com/courses/00_learning_how_to_learn/README.html][Learning How to Learn]]                           | 10/11/2016 | 16/11/2016 |   49 | https://coursera.org/verify/EM242TW88NL7 |
+|     1 | [[http://challenge.li-xinyang.com/courses/01_cs50_introduction_to_cs/README.html][Introduction to Computer Science - CS50]]         | 12/11/2016 |            |   90 |                                          |
+|     2 | [[http://challenge.li-xinyang.com/courses/02_effective_thinking_through_mathematics/README.html][Effective Thinking Through Mathematics]]*         | 24/11/2016 | 29/11/2016 |   49 | Pending                                  |
+|     3 | [[http://challenge.li-xinyang.com/courses/03_how_to_code_systematic_program_design_p1/README.html][How to Code: Systematic Program Design - Part 1]] | 29/11/2016 |            |   49 |                                          |
 #+HTML: </div>
 
 Study note with =*= at the end indicates that course is worth re-taking after a while.
