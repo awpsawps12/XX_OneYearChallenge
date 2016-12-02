@@ -207,7 +207,10 @@ def retrive_repo_data
   d = repo_info(octokit_client, REPO_NAME)
   # :updated_at, :pushed_at, :stargazers_count, :watchers_count,
   # :forks_count, :open_issues_count, :forks, :watchers
-  d_str = "#{Time.now.utc}, #{d.updated_at}, #{d.pushed_at}, #{d.stargazers_count}, #{d.watchers_count}, #{d.forks_count}, #{d.open_issues_count}, #{d.forks}, #{d.watchers}"
+  d_str = "#{Time.now.utc}, #{d.updated_at}, #{d.pushed_at},"\
+          "#{d.stargazers_count}, #{d.watchers_count},"\
+          "#{d.forks_count}, #{d.open_issues_count},"\
+          "#{d.forks}, #{d.watchers}"
 
   File.open(DATA_FILE, 'a') { |f| f.puts d_str }
 
