@@ -15,6 +15,8 @@
 #+TITLE: Learning How to Learn
 #+EMAIL: mail@li-xinyang.com
 
+https://www.coursera.org/learn/learning-how-to-learn
+
 * DONE Week 01
   CLOSED: [2016-11-12 Sat 18:38]
 

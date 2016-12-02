@@ -15,6 +15,8 @@
 #+TITLE: Introduction to Computer Science
 #+EMAIL: mail@li-xinyang.com
 
+https://www.edx.org/course/introduction-computer-science-harvardx-cs50x
+
 The study note for this course may not as detail as the first one because I have watched this course many times when I first started learning how to do programming. However, I never /fully/ complete this course even once. The detailed course note can be found at http://cs50.tv.
 
 * DONE Week 00
