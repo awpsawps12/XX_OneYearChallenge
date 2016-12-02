@@ -27,7 +27,7 @@ $(document).ready(function() {
 
     function appendCCLicenseLabel() {
         var img = document.createElement('img');
-        img.src = 'https://licensebuttons.net/l/by-sa/4.0/88x31.png';
+        img.src = 'https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png';
         var target = document.getElementById('content');
         target.appendChild(img);
     }
